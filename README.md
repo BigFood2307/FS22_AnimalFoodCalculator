@@ -31,6 +31,8 @@ If someone wants to double check, this exe was created with pyinstaller version 
 
 If you have no idea how to run this script without an executable but still trust me enough to run directly from code, here is how:
 
+* Download this code from github
+* Unpack it into a folder, enter the folder with this README inside it
 * Install Python 3: https://www.python.org/downloads/
 * Open this folder in a command line: https://www.wikihow.com/Open-a-Folder-in-Cmd
 * Type 'python main.py' (without quotes)
