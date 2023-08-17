@@ -2,27 +2,43 @@
 import xml.etree.ElementTree as ET
 from collections import Counter
 from animal_types import AnimalSubType
-from animal_organization import AnimalHubandry, AnimalCluster
+from animal_organization import AnimalHubandry
+import math
 
 from utility import	findSubType
 
 # Config start
 
-baseXmlPath = "xmls/eas_animals.xml"
-overrideXmlPath = "xmls/afa_eas_animalDataOverride.xml" # None if no M+ is used
-placeablesXml = "xmls/sample_placeables.xml"
-
-farmIds = [0, 1]
-
-timeframe = 12
-
-ageFilter = [8, 1000]
-subTypeFilter = ["COW_HOLSTEIN", "BULL_HOLSTEIN"]
-
-daysPerMonth = 4
+settingsXmlPath = "xmls/script_settings.xml"
 
 # Config end
 
+# Read settings
+settingsElement = ET.parse(settingsXmlPath).getroot()
+
+baseXmlPath = settingsElement.find('baseXml').attrib['path']
+overrideXmlPath = settingsElement.find('overrideXml').attrib['path']
+placeablesXml = settingsElement.find('placeablesXml').attrib['path']
+
+farmIds = []
+
+for farmIdElement in settingsElement.find('farmIds').iter('farmId'):
+	farmIds.append(int(farmIdElement.attrib['id']))
+
+timeframe =  int(settingsElement.find('timeframe').attrib['months'])
+
+ageFilter = [0, math.inf]
+ageFilter[0] = int(settingsElement.find('ageFilter').attrib['min'])
+ageFilter[1] = int(settingsElement.find('ageFilter').attrib['max'])
+
+subTypeFilter = []
+
+for subTypeElement in settingsElement.find('subTypeFilter').iter('subType'):
+	subTypeFilter.append(subTypeElement.attrib['name'])
+
+daysPerMonth =  int(settingsElement.find('daysPerMonth').attrib['days'])
+
+# Read subtypes
 baseElement = ET.parse(baseXmlPath).getroot()
 
 subtypes = []
@@ -32,7 +48,8 @@ for animalElement in baseElement.iter('animal'):
 	for subTypeElement in animalElement.iter('subType'):
 		subtypes.append(AnimalSubType(type, subTypeElement))
 
-if overrideXmlPath is not None:
+# Override subtypes
+if overrideXmlPath != "":
 	overrideElement = ET.parse(overrideXmlPath).getroot()
 
 	for subTypeElement in overrideElement.iter('animalData'):
@@ -42,8 +59,10 @@ if overrideXmlPath is not None:
 		if -1 != idx:
 			subtypes[idx].override(subTypeElement)
 
+# Read placeables
 husbandries = AnimalHubandry.allFromPlaceables(placeablesXml, farmIds, subtypes)
 
+# Compute Food
 outputs = Counter()
 inputs = Counter()
 
@@ -55,6 +74,7 @@ for month in range(timeframe):
 outputs = dict(outputs)
 inputs = dict(inputs)
 
+# Output
 print("Inputs:")
 for key in iter(inputs):
 	perDay = inputs[key]/(12*daysPerMonth)

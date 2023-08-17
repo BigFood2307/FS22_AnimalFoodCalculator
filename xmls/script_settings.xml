@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<settings version="1">
+	<baseXml path="xmls/eas_animals.xml"/>
+	<overrideXml path="xmls/afa_eas_animalDataOverride.xml"/>
+	<placeablesXml path="xmls/sample_placeables.xml"/>
+	<farmIds>
+		<farmId id="0"/>
+		<farmId id="1"/>
+	</farmIds>
+	<timeframe months="12"/>
+	<ageFilter min="8" max="1000"/>
+	<subTypeFilter>
+		<subType name="COW_HOLSTEIN"/>
+		<subType name="BULL_HOLSTEIN"/>
+	</subTypeFilter>
+	<daysPerMonth days="4"/>
+</settings>
