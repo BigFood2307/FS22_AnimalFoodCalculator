@@ -1,0 +1,1352 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<placeables version="1">
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/bunkerSiloBGA/Bunker.xml" id="1" position="408.98901367188 208.16400146484 318.37600708008" rotation="0 0 0" age="14.000000" price="1.000000" farmId="1">
+        <bunkerSilo state="0" fillLevel="0.000000" compactedFillLevel="0.000000" fermentingTime="0.000000" openedAtFront="false" openedAtBack="false" inputFillType="CHOPPEDMAIZE" outputFillType="CHOPPEDMAIZE_FERMENTED"/>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/bunkerSiloBGA/Bunker.xml" id="2" position="421.67599487305 208.16400146484 318.37600708008" rotation="0 0 0" age="14.000000" price="1.000000" farmId="1">
+        <bunkerSilo state="1" fillLevel="327301.593750" compactedFillLevel="327301.593750" fermentingTime="212400000.000000" openedAtFront="false" openedAtBack="false" inputFillType="CHOPPEDMAIZE" outputFillType="CHOPPEDMAIZE_FERMENTED"/>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/chickenBarnBig/chickenBarnBig.xml" id="3" position="502.29501342773 207.62100219727 329.06298828125" rotation="0 0 0" age="14.000000" price="1.000000" farmId="1">
+        <husbandry globalProductionFactor="0.000000">
+            <storage farmId="1"/>
+        </husbandry>
+        <husbandryAnimals eas_numOvercrowdingHours="0"/>
+        <husbandryPallets pendingLiters="0.000000"/>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="0.000000"/>
+                <grazingDoneToday GRASS_WINDROW="false"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/cowBarnMedium/cowBarnMedium.xml" id="4" position="388.32598876953 209.54499816895 270.71600341797" rotation="0 0 0" age="14.000000" price="1.000000" farmId="1">
+        <husbandry globalProductionFactor="1.000000">
+            <storage farmId="1">
+                <node fillType="LIQUIDMANURE" fillLevel="29830.306641"/>
+                <node fillType="MILK" fillLevel="8087.813965"/>
+                <node fillType="STRAW" fillLevel="38198.152344"/>
+            </storage>
+        </husbandry>
+        <husbandryAnimals eas_numOvercrowdingHours="0">
+            <clusters>
+                <animal subType="COW_HOLSTEIN" numAnimals="10" age="32" health="100" reproduction="0"/>
+                <animal subType="COW_HOLSTEIN" numAnimals="5" age="35" health="100" reproduction="30"/>
+                <animal subType="BULL_HOLSTEIN" numAnimals="1" age="25" health="100" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFood>
+            <fillLevel fillType="SILAGE" fillLevel="3387.366699"/>
+            <fillLevel fillType="SLIDER04" fillLevel="4325.465332"/>
+            <fillLevel fillType="DRYGRASS_WINDROW" fillLevel="3196.409180"/>
+            <fillLevel fillType="SLIDER03" fillLevel="8650.930664"/>
+            <fillLevel fillType="SLIDER02" fillLevel="12976.399414"/>
+            <fillLevel fillType="SLIDER01" fillLevel="17301.861328"/>
+            <fillLevel fillType="CANOLA" fillLevel="1741.729248"/>
+        </husbandryFood>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="0.000000"/>
+                <grazingDoneToday GRASS_WINDROW="true"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/cowBarnSmall/cowBarnSmall.xml" id="5" position="394.27200317383 180 -423.05999755859" rotation="0 0 0" age="14.000000" price="1.000000" farmId="15">
+        <husbandry globalProductionFactor="0.000000">
+            <storage farmId="15"/>
+        </husbandry>
+        <husbandryAnimals eas_numOvercrowdingHours="0"/>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="0.000000"/>
+                <grazingDoneToday GRASS_WINDROW="false"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/farmBuildings/farmBuilding.xml" id="6" position="479.94100952148 209.66000366211 334.19198608398" rotation="0 0 0" age="14.000000" price="1.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="1.000000" direction="0"/>
+            <animatedObject time="1.000000" direction="0"/>
+        </animatedObjects>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/gasStation/dieselTanksLevel02.xml" id="7" position="470.72399902344 205.59800720215 373.67401123047" rotation="-180.00000500896 74.999998671971 180.00000500896" age="14.000000" price="1.000000" farmId="1">
+        <silo>
+            <storage index="1" farmId="1">
+                <node fillType="DIESEL" fillLevel="4735.282715"/>
+            </storage>
+        </silo>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/Old_Manure_Heap/Old_Manure_Heap_In.xml" id="8" position="412.72500610352 209.61700439453 257.59201049805" rotation="0 0 0" age="14.000000" price="1.000000" farmId="1">
+        <manureHeap manureToDrop="15" manureToPick="0"/>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/Old_Manure_Heap/Old_Manure_Heap_In02.xml" id="9" position="412.72500610352 209.61700439453 257.59201049805" rotation="0 0 0" age="14.000000" price="1.000000" farmId="1">
+        <manureHeap manureToDrop="0" manureToPick="0"/>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/Old_Manure_Heap/Old_Manure_Heap_In04.xml" id="10" position="102.32299804688 191.76400756836 -82.332000732422" rotation="0 0 0" age="14.000000" price="1.000000" farmId="15">
+        <manureHeap manureToDrop="0" manureToPick="0"/>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/gasStation/gasStation01.xml" id="11" position="-158.0119934082 194.5059967041 -574.11199951172" rotation="0 0 0" age="14.000000" price="1.000000" farmId="0" mapBoundId="gasStation01"/>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/farmBuildings/Tunnel01.xml" id="12" position="102.17700195313 191.70899963379 -57.999000549316" rotation="0 90.000002504478 0" age="14.000000" price="10000.000000" farmId="15">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <colorable>
+            <color>1</color>
+        </colorable>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/pigBarnMedium/pigBarnMedium.xml" id="13" position="100.37799835205 191.69299316406 -73.503997802734" rotation="0 0 0" age="14.000000" price="1.000000" farmId="15">
+        <husbandry globalProductionFactor="0.000000">
+            <storage farmId="15"/>
+        </husbandry>
+        <husbandryAnimals eas_numOvercrowdingHours="0"/>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="0.000000"/>
+                <grazingDoneToday GRASS_WINDROW="false"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/sheepBarnBig/sheepBarnBig.xml" id="14" position="509.75 209.52900695801 285.4460144043" rotation="-180.00000500896 0 -180.00000500896" age="14.000000" price="1.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.000000"/>
+        <husbandryAnimals eas_numOvercrowdingHours="0"/>
+        <husbandryPallets pendingLiters="0.000000"/>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="0.000000"/>
+                <grazingDoneToday GRASS_WINDROW="false"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/workshop/workshop.xml" id="15" position="450.78399658203 205.65699768066 363.21301269531" rotation="-180.00000500896 74.999998671971 -180.00000500896" age="14.000000" price="1.000000" farmId="1"/>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/StrawBarn/Building01.xml" id="16" position="539.23101806641 209.49600219727 272.28799438477" rotation="0 0 0" age="14.000000" price="18000.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/StrawBarn/Building02.xml" id="17" position="-28.511999130249 188.2799987793 -622.30999755859" rotation="0 0 0" age="14.000000" price="10000.000000" farmId="15">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/Old_grain.xml" id="18" position="458.67599487305 207.19999694824 330.22299194336" rotation="0 90.000002504478 0" age="14.000000" price="1.000000" farmId="1">
+        <silo>
+            <storage index="1" farmId="1">
+                <node fillType="WHEAT" fillLevel="1529.242432"/>
+                <node fillType="BARLEY" fillLevel="2802.007813"/>
+                <node fillType="OAT" fillLevel="32343.898438"/>
+                <node fillType="CANOLA" fillLevel="16659.320313"/>
+            </storage>
+        </silo>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/objectStorage/objectStorage.xml" id="19" position="508.81100463867 205.75 354.49398803711" rotation="0 -74.999998671971 0" age="14.000000" price="1.000000" farmId="1">
+        <objectStorage>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="5000.000000" fillType="STRAW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+        </objectStorage>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/objectStorage/objectStorage.xml" id="20" position="486.29800415039 205.75 360.52600097656" rotation="0 -74.999998671971 0" age="14.000000" price="1.000000" farmId="1">
+        <objectStorage>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+            <object className="Bale" filename="$moddir$FS22_netWrap_addon/roundbales/roundbale125_poettinger.xml" valueScale="1.000000" fillLevel="4500.000000" fillType="DRYGRASS_WINDROW" farmId="1" isMissionBale="false" wrappingState="0.000000" wrappingColor="1 1 1 1"/>
+        </objectStorage>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/debrisCrusher/debrisCrusher.xml" id="21" position="-661.83599853516 211.01400756836 -820.88000488281" rotation="0 -59.492996727562 0" age="14.000000" price="1.000000" farmId="0" mapBoundId="Lime01">
+        <productionPoint>
+            <production id="Lime" isEnabled="true"/>
+            <priorityFillType>STONE 10</priorityFillType>
+            <storage farmId="0"/>
+        </productionPoint>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/oilPlant/oilPlant.xml" id="22" position="837.22802734375 188.87399291992 -577.52197265625" rotation="0 -30.000000834826 0" age="14.000000" price="40000.000000" farmId="0" mapBoundId="OilPlant01">
+        <productionPoint>
+            <production id="sunflower_oil" isEnabled="true"/>
+            <production id="canola_oil" isEnabled="true"/>
+            <production id="olive_oil" isEnabled="true"/>
+            <priorityFillType>OLIVE 10</priorityFillType>
+            <priorityFillType>CANOLA 10</priorityFillType>
+            <priorityFillType>SUNFLOWER 10</priorityFillType>
+            <storage farmId="0"/>
+        </productionPoint>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/bakeryEU/bakeryEU.xml" id="23" position="-928.73498535156 210.29899597168 651.23400878906" rotation="0 0 0" age="14.000000" price="50000.000000" farmId="0" mapBoundId="bakeryEU01">
+        <productionPoint>
+            <production id="bread" isEnabled="true"/>
+            <production id="cake" isEnabled="true"/>
+            <production id="beugnon" isEnabled="true"/>
+            <priorityFillType>BUTTER 10</priorityFillType>
+            <priorityFillType>SUGAR 10</priorityFillType>
+            <priorityFillType>MILK 10</priorityFillType>
+            <priorityFillType>EGG 10</priorityFillType>
+            <priorityFillType>FLOUR 10</priorityFillType>
+            <priorityFillType>APPLE 10</priorityFillType>
+            <priorityFillType>STRAWBERRY 10</priorityFillType>
+            <priorityFillType>MELON 10</priorityFillType>
+            <storage farmId="0">
+                <node fillType="MILK" fillLevel="4868.138184"/>
+            </storage>
+        </productionPoint>
+    </placeable>
+    <placeable filename="data/placeables/lizard/productionPoints/spinneryEU/spinneryEU.xml" id="24" position="-831.08697509766 208.37399291992 724.63098144531" rotation="0 0 0" age="14.000000" price="60000.000000" farmId="0" mapBoundId="spinneryEU01">
+        <productionPoint>
+            <production id="fabric_wool" isEnabled="true"/>
+            <production id="fabric_cotton" isEnabled="true"/>
+            <priorityFillType>COTTON 10</priorityFillType>
+            <priorityFillType>WOOL 10</priorityFillType>
+            <storage farmId="0"/>
+        </productionPoint>
+    </placeable>
+    <placeable filename="data/placeables/lizard/productionPoints/grainMill/grainMill.xml" id="25" position="-894.51397705078 185.4049987793 102.95099639893" rotation="0 90.000002504478 0" age="14.000000" price="96000.000000" farmId="0" mapBoundId="GrainMill01">
+        <productionPoint>
+            <production id="flourWheat" isEnabled="true"/>
+            <production id="flourBarley" isEnabled="true"/>
+            <production id="flourOat" isEnabled="true"/>
+            <production id="flourSorghum" isEnabled="true"/>
+            <priorityFillType>WHEAT 10</priorityFillType>
+            <priorityFillType>BARLEY 10</priorityFillType>
+            <priorityFillType>OAT 10</priorityFillType>
+            <priorityFillType>SORGHUM 10</priorityFillType>
+            <storage farmId="0"/>
+        </productionPoint>
+    </placeable>
+    <placeable filename="data/placeables/lizard/weighingStation/weighingStationSmall/weighingStationSmall.xml" id="26" position="-912.09100341797 185.14999389648 58.375999450684" rotation="0 -90.000002504478 0" age="14.000000" price="64000.000000" farmId="0" mapBoundId="GrainMillWeighingStation01"/>
+    <placeable filename="data/placeables/lizard/weighingStation/weighingStationSmall/weighingStationSmall.xml" id="27" position="-836.31500244141 185.35299682617 74.994003295898" rotation="180.00000500896 90.000002504478 -180.00000500896" age="14.000000" price="64000.000000" farmId="0" mapBoundId="GrainMillWeighingStation02"/>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/carpenterEU/carpenterEU.xml" id="28" position="-292.25500488281 183.0359954834 -225.85299682617" rotation="-180.00000500896 58.665000215238 -180.00000500896" age="14.000000" price="60000.000000" farmId="0" mapBoundId="carpenterEU01">
+        <productionPoint>
+            <production id="furnitureBoards" isEnabled="true"/>
+            <production id="furniturePallets" isEnabled="true"/>
+            <priorityFillType>BOARDS 10</priorityFillType>
+            <storage farmId="0"/>
+        </productionPoint>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/greenhouseLarge/greenhouseLarge.xml" id="29" position="-56.544998168945 189.08599853516 -621.93701171875" rotation="0 180.00000500896 0" age="14.000000" price="30000.000000" farmId="15" mapBoundId="greenhouseLarge01">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <productionPoint productionCostsToClaim="0.052201">
+            <production id="tomato" isEnabled="true"/>
+            <production id="lettuce" isEnabled="true"/>
+            <production id="lettucered" isEnabled="true"/>
+            <production id="strawberry" isEnabled="true"/>
+            <production id="melon" isEnabled="true"/>
+            <priorityFillType>WATER 10</priorityFillType>
+            <priorityFillType>FERTILIZER 10</priorityFillType>
+            <priorityFillType>NEWPALLET 10</priorityFillType>
+            <priorityFillType>STRAW 10</priorityFillType>
+            <priorityFillType>MANURE 10</priorityFillType>
+            <storage farmId="15"/>
+        </productionPoint>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/greenhouseLarge/greenhouseMedium.xml" id="30" position="-51.939998626709 189.30000305176 -665.2919921875" rotation="0 0 0" age="14.000000" price="20000.000000" farmId="15" mapBoundId="greenhouseMedium01">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <productionPoint productionCostsToClaim="0.031321">
+            <production id="lettuce" isEnabled="true"/>
+            <production id="lettucered" isEnabled="true"/>
+            <production id="melon" isEnabled="true"/>
+            <priorityFillType>WATER 10</priorityFillType>
+            <priorityFillType>NEWPALLET 10</priorityFillType>
+            <priorityFillType>STRAW 10</priorityFillType>
+            <storage farmId="15"/>
+        </productionPoint>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/greenhouseLarge/greenhouseSmall.xml" id="31" position="-34.213001251221 188.81700134277 -662.86700439453" rotation="0 0 0" age="14.000000" price="10000.000000" farmId="15" mapBoundId="greenhouseSmall01">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <productionPoint productionCostsToClaim="0.031320">
+            <production id="lettuce" isEnabled="true"/>
+            <production id="lettucered" isEnabled="true"/>
+            <production id="melon" isEnabled="true"/>
+            <priorityFillType>WATER 10</priorityFillType>
+            <priorityFillType>NEWPALLET 10</priorityFillType>
+            <priorityFillType>STRAW 10</priorityFillType>
+            <storage farmId="15"/>
+        </productionPoint>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/greenhouseLarge/greenhouseFarm.xml" id="32" position="472.61401367188 209.92599487305 305.52398681641" rotation="0 90.000002504478 0" age="14.000000" price="1.000000" farmId="1" mapBoundId="greenhouseFarm01">
+        <productionPoint productionCostsToClaim="0.010440">
+            <production id="melon" isEnabled="true"/>
+            <storageFillType>LETTUCERED</storageFillType>
+            <storageFillType>MELON</storageFillType>
+            <storageFillType>TOMATO</storageFillType>
+            <storageFillType>STRAWBERRY</storageFillType>
+            <storageFillType>LETTUCE</storageFillType>
+            <priorityFillType>WATER 10</priorityFillType>
+            <priorityFillType>MANURE 10</priorityFillType>
+            <priorityFillType>STRAW 10</priorityFillType>
+            <storage farmId="1">
+                <node fillType="WATER" fillLevel="2576.897705"/>
+                <node fillType="STRAW" fillLevel="3306.237305"/>
+                <node fillType="MELON" fillLevel="410.914948"/>
+                <node fillType="MANURE" fillLevel="4605.214844"/>
+            </storage>
+        </productionPoint>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/raisinFactory/raisinFactory.xml" id="33" position="858.63598632813 188.77000427246 -508.18099975586" rotation="0 0 0" age="14.000000" price="80000.000000" farmId="0" mapBoundId="raisinFactory01">
+        <productionPoint>
+            <production id="raisins" isEnabled="true"/>
+            <production id="grapejuice" isEnabled="true"/>
+            <production id="applejuice" isEnabled="true"/>
+            <priorityFillType>GRAPE 10</priorityFillType>
+            <priorityFillType>APPLE 10</priorityFillType>
+            <storage farmId="0"/>
+        </productionPoint>
+    </placeable>
+    <placeable filename="data/placeables/lizard/productionPoints/sugarMill/sugarMill.xml" id="34" position="-178.9049987793 194.51800537109 -622.26202392578" rotation="-180.00000500896 0 180.00000500896" age="14.000000" price="80000.000000" farmId="0" mapBoundId="sugarMill01">
+        <productionPoint>
+            <production id="sugarbeet_sugar" isEnabled="true"/>
+            <production id="sugarbeetCut_sugar" isEnabled="true"/>
+            <production id="sugarcane_sugar" isEnabled="true"/>
+            <priorityFillType>SUGARBEET_CUT 10</priorityFillType>
+            <priorityFillType>SUGARBEET 10</priorityFillType>
+            <priorityFillType>SUGARCANE 10</priorityFillType>
+            <storage farmId="0"/>
+        </productionPoint>
+    </placeable>
+    <placeable filename="data/placeables/lizard/productionPoints/dairyEU/dairyEU.xml" id="35" position="-295.20700073242 194.65400695801 -608.46398925781" rotation="-180.00000500896 -57.321003401687 -180.00000500896" age="14.000000" price="70000.000000" farmId="0" mapBoundId="Dairy01">
+        <productionPoint>
+            <production id="butter" isEnabled="true"/>
+            <production id="cheese" isEnabled="true"/>
+            <production id="chocolate" isEnabled="true"/>
+            <priorityFillType>MILK 10</priorityFillType>
+            <priorityFillType>SUGAR 10</priorityFillType>
+            <storage farmId="0">
+                <node fillType="MILK" fillLevel="19960.015625"/>
+            </storage>
+        </productionPoint>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/Fries/FriesFactory.xml" id="36" position="-127.09300231934 185.57800292969 -525.95501708984" rotation="0 45.000001252239 0" age="14.000000" price="50000.000000" farmId="0" mapBoundId="Fries01">
+        <productionPoint>
+            <production id="fries" isEnabled="true"/>
+            <priorityFillType>POTATO 10</priorityFillType>
+            <priorityFillType>SUNFLOWER_OIL 10</priorityFillType>
+            <storage farmId="0"/>
+        </productionPoint>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/sawmill/sawmill.xml" id="37" position="-370.39099121094 183.04899597168 -202.63600158691" rotation="0 0 0" age="14.000000" price="100000.000000" farmId="0" mapBoundId="sawmill01">
+        <productionPoint>
+            <production id="boards" isEnabled="true"/>
+            <priorityFillType>WOOD 10</priorityFillType>
+            <storage farmId="0">
+                <node fillType="WOOD" fillLevel="134536.281250"/>
+            </storage>
+        </productionPoint>
+    </placeable>
+    <placeable filename="data/placeables/lizard/weighingStation/weighingStationSmall/weighingStationSmall.xml" id="38" position="-291.57998657227 181.26100158691 -269.3210144043" rotation="180.00000500896 45.000001252239 180.00000500896" age="14.000000" price="64000.000000" farmId="0" mapBoundId="sawmillWeighingStation01"/>
+    <placeable filename="data/placeables/lizard/weighingStation/weighingStationSmall/weighingStationSmall.xml" id="39" position="-277.30999755859 181.26100158691 -255.05099487305" rotation="0 -45.000001252239 0" age="14.000000" price="64000.000000" farmId="0" mapBoundId="sawmillWeighingStation02"/>
+    <placeable filename="data/placeables/lizard/weighingStation/weighingStationSmall/weighingStationSmall.xml" id="40" position="789.19097900391 188.3090057373 -518.43597412109" rotation="-180.00000500896 30.000000834826 -180.00000500896" age="14.000000" price="64000.000000" farmId="0" mapBoundId="GrainWeighingStation01"/>
+    <placeable filename="data/placeables/lizard/weighingStation/weighingStationSmall/weighingStationSmall.xml" id="41" position="780.95599365234 188.3090057373 -523.10699462891" rotation="0 -30.000000834826 0" age="14.000000" price="64000.000000" farmId="0" mapBoundId="GrainWeighingStation02"/>
+    <placeable filename="data/placeables/lizard/sellingPoints/pizzeria/pizzeria.xml" id="42" position="-950.78002929688 210.17900085449 698.26098632813" rotation="0 -90.000002504478 0" age="14.000000" price="60000.000000" farmId="0" mapBoundId="Pisseria01">
+        <sellingStation>
+            <stats fillType="CANOLA_OIL" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="35708468.000000">
+                <curveBaseCurve nominalAmplitude="0.065600" nominalAmplitudeVariation="0.246000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.095371" period="61476956.000000" time="46107716.000000"/>
+                <curve1 nominalAmplitude="0.032800" nominalAmplitudeVariation="0.032800" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.030348" period="492220512.000000" time="312548032.000000"/>
+            </stats>
+            <stats fillType="SUGAR" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="16593039.000000">
+                <curveBaseCurve nominalAmplitude="0.020000" nominalAmplitudeVariation="0.075000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.049803" period="70861904.000000" time="17715476.000000"/>
+                <curve1 nominalAmplitude="0.010000" nominalAmplitudeVariation="0.010000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.001554" period="487294240.000000" time="355593632.000000"/>
+            </stats>
+            <stats fillType="CAKE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="8637362.000000">
+                <curveBaseCurve nominalAmplitude="0.132000" nominalAmplitudeVariation="0.495000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.319943" period="44195092.000000" time="11048773.000000"/>
+                <curve1 nominalAmplitude="0.066000" nominalAmplitudeVariation="0.066000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.114007" period="514550336.000000" time="142358608.000000"/>
+            </stats>
+            <stats fillType="TOMATO" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="2598846.250000">
+                <curveBaseCurve nominalAmplitude="0.020000" nominalAmplitudeVariation="0.075000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.033185" period="63974588.000000" time="15993647.000000"/>
+                <curve1 nominalAmplitude="0.010000" nominalAmplitudeVariation="0.010000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.008269" period="598878848.000000" time="282377376.000000"/>
+            </stats>
+            <stats fillType="GRAPEJUICE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="34327772.000000">
+                <curveBaseCurve nominalAmplitude="0.064000" nominalAmplitudeVariation="0.240000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.160110" period="43220308.000000" time="10805077.000000"/>
+                <curve1 nominalAmplitude="0.032000" nominalAmplitudeVariation="0.032000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.017962" period="561329408.000000" time="425764416.000000"/>
+            </stats>
+            <stats fillType="OLIVE_OIL" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="49203388.000000">
+                <curveBaseCurve nominalAmplitude="0.097600" nominalAmplitudeVariation="0.366000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.185517" period="67957624.000000" time="16989406.000000"/>
+                <curve1 nominalAmplitude="0.048800" nominalAmplitudeVariation="0.048800" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.067309" period="489840032.000000" time="232061936.000000"/>
+            </stats>
+            <stats fillType="SUNFLOWER_OIL" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="50748032.000000">
+                <curveBaseCurve nominalAmplitude="0.071200" nominalAmplitudeVariation="0.267000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.129419" period="64205636.000000" time="16051409.000000"/>
+                <curve1 nominalAmplitude="0.035600" nominalAmplitudeVariation="0.035600" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.046415" period="431692192.000000" time="114747128.000000"/>
+            </stats>
+            <stats fillType="EGG" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.044800" nominalAmplitudeVariation="0.168000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.025810" period="69259232.000000" time="52090996.000000"/>
+                <curve1 nominalAmplitude="0.022400" nominalAmplitudeVariation="0.022400" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.009749" period="569701888.000000" time="46303240.000000"/>
+            </stats>
+            <stats fillType="CHEESE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="16593039.000000">
+                <curveBaseCurve nominalAmplitude="0.072000" nominalAmplitudeVariation="0.270000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.131381" period="58198772.000000" time="43649080.000000"/>
+                <curve1 nominalAmplitude="0.036000" nominalAmplitudeVariation="0.036000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.050264" period="461482176.000000" time="408498112.000000"/>
+            </stats>
+            <stats fillType="FLOUR" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.022800" nominalAmplitudeVariation="0.085500" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.056846" period="93430064.000000" time="14507618.000000"/>
+                <curve1 nominalAmplitude="0.011400" nominalAmplitudeVariation="0.011400" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.014910" period="587393920.000000" time="347800800.000000"/>
+            </stats>
+            <stats fillType="GRAPE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.024120" nominalAmplitudeVariation="0.090450" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.063358" period="74130960.000000" time="51249740.000000"/>
+                <curve1 nominalAmplitude="0.012060" nominalAmplitudeVariation="0.012060" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.021993" period="461726496.000000" time="62425532.000000"/>
+            </stats>
+            <stats fillType="STRAWBERRY" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="34302920.000000">
+                <curveBaseCurve nominalAmplitude="0.010000" nominalAmplitudeVariation="0.037500" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.009200" period="81939216.000000" time="20484804.000000"/>
+                <curve1 nominalAmplitude="0.005000" nominalAmplitudeVariation="0.005000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.004694" period="437112960.000000" time="394725248.000000"/>
+            </stats>
+            <stats fillType="LETTUCE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="40632092.000000">
+                <curveBaseCurve nominalAmplitude="0.039600" nominalAmplitudeVariation="0.148500" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.050897" period="63731264.000000" time="47798448.000000"/>
+                <curve1 nominalAmplitude="0.019800" nominalAmplitudeVariation="0.019800" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.013248" period="476472000.000000" time="421023040.000000"/>
+            </stats>
+        </sellingStation>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/restaurant/restaurant.xml" id="43" position="-47.485000610352 187.27600097656 -574.91198730469" rotation="0 0 0" age="14.000000" price="65000.000000" farmId="0" mapBoundId="Resto01">
+        <sellingStation>
+            <stats fillType="GRAPE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="41850716.000000">
+                <curveBaseCurve nominalAmplitude="0.024120" nominalAmplitudeVariation="0.090450" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.001392" period="46266632.000000" time="11566658.000000"/>
+                <curve1 nominalAmplitude="0.012060" nominalAmplitudeVariation="0.012060" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.017800" period="527886304.000000" time="518402784.000000"/>
+            </stats>
+            <stats fillType="MAIZE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.015200" nominalAmplitudeVariation="0.057000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.011644" period="72824624.000000" time="16509913.000000"/>
+                <curve1 nominalAmplitude="0.007600" nominalAmplitudeVariation="0.007600" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.013054" period="458899904.000000" time="224884784.000000"/>
+            </stats>
+            <stats fillType="POTATO" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.006880" nominalAmplitudeVariation="0.025800" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.017775" period="88484880.000000" time="14424618.000000"/>
+                <curve1 nominalAmplitude="0.003440" nominalAmplitudeVariation="0.003440" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.005077" period="421935488.000000" time="331559488.000000"/>
+            </stats>
+            <stats fillType="EGG" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="37662664.000000">
+                <curveBaseCurve nominalAmplitude="0.044800" nominalAmplitudeVariation="0.168000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.056628" period="62457404.000000" time="15614351.000000"/>
+                <curve1 nominalAmplitude="0.022400" nominalAmplitudeVariation="0.022400" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.016893" period="410486848.000000" time="240302960.000000"/>
+            </stats>
+            <stats fillType="FLOUR" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="10245394.000000">
+                <curveBaseCurve nominalAmplitude="0.022800" nominalAmplitudeVariation="0.085500" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.015901" period="62535376.000000" time="15633844.000000"/>
+                <curve1 nominalAmplitude="0.011400" nominalAmplitudeVariation="0.011400" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.018037" period="418396832.000000" time="376634624.000000"/>
+            </stats>
+            <stats fillType="CAKE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="49927316.000000">
+                <curveBaseCurve nominalAmplitude="0.132000" nominalAmplitudeVariation="0.495000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.085292" period="53013284.000000" time="39759964.000000"/>
+                <curve1 nominalAmplitude="0.066000" nominalAmplitudeVariation="0.066000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.113511" period="482430208.000000" time="342884992.000000"/>
+            </stats>
+            <stats fillType="BUTTER" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="42222692.000000">
+                <curveBaseCurve nominalAmplitude="0.036000" nominalAmplitudeVariation="0.135000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.027106" period="80575560.000000" time="60431672.000000"/>
+                <curve1 nominalAmplitude="0.018000" nominalAmplitudeVariation="0.018000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.003327" period="569882496.000000" time="451486528.000000"/>
+            </stats>
+            <stats fillType="CHEESE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="14424618.000000">
+                <curveBaseCurve nominalAmplitude="0.072000" nominalAmplitudeVariation="0.270000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.064010" period="87775280.000000" time="21943820.000000"/>
+                <curve1 nominalAmplitude="0.036000" nominalAmplitudeVariation="0.036000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.046393" period="517307904.000000" time="424857408.000000"/>
+            </stats>
+            <stats fillType="SUGAR" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="40323716.000000">
+                <curveBaseCurve nominalAmplitude="0.020000" nominalAmplitudeVariation="0.075000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.009785" period="65609440.000000" time="16402360.000000"/>
+                <curve1 nominalAmplitude="0.010000" nominalAmplitudeVariation="0.010000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.001533" period="594039744.000000" time="426147264.000000"/>
+            </stats>
+            <stats fillType="HONEY" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="35214356.000000">
+                <curveBaseCurve nominalAmplitude="0.040000" nominalAmplitudeVariation="0.150000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.087867" period="94592704.000000" time="70944528.000000"/>
+                <curve1 nominalAmplitude="0.020000" nominalAmplitudeVariation="0.020000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.036575" period="588609856.000000" time="208455200.000000"/>
+            </stats>
+            <stats fillType="SUNFLOWER_OIL" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="46499300.000000">
+                <curveBaseCurve nominalAmplitude="0.071200" nominalAmplitudeVariation="0.267000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.039342" period="94034464.000000" time="23508616.000000"/>
+                <curve1 nominalAmplitude="0.035600" nominalAmplitudeVariation="0.035600" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.024657" period="478852160.000000" time="79768688.000000"/>
+            </stats>
+            <stats fillType="CANOLA_OIL" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.065600" nominalAmplitudeVariation="0.246000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.127283" period="67182952.000000" time="8108301.500000"/>
+                <curve1 nominalAmplitude="0.032800" nominalAmplitudeVariation="0.032800" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.028191" period="498472192.000000" time="323594048.000000"/>
+            </stats>
+            <stats fillType="OLIVE_OIL" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.097600" nominalAmplitudeVariation="0.366000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.015838" period="46067240.000000" time="19996286.000000"/>
+                <curve1 nominalAmplitude="0.048800" nominalAmplitudeVariation="0.048800" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.081592" period="525558368.000000" time="18078418.000000"/>
+            </stats>
+            <stats fillType="GRAPEJUICE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.064000" nominalAmplitudeVariation="0.240000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.058420" period="94189232.000000" time="55395416.000000"/>
+                <curve1 nominalAmplitude="0.032000" nominalAmplitudeVariation="0.032000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.022774" period="539082304.000000" time="403728608.000000"/>
+            </stats>
+            <stats fillType="LETTUCE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.039600" nominalAmplitudeVariation="0.148500" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.058380" period="67572600.000000" time="57632072.000000"/>
+                <curve1 nominalAmplitude="0.019800" nominalAmplitudeVariation="0.019800" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.004619" period="595451520.000000" time="498530464.000000"/>
+            </stats>
+            <stats fillType="TOMATO" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="45873864.000000">
+                <curveBaseCurve nominalAmplitude="0.020000" nominalAmplitudeVariation="0.075000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.037436" period="68421864.000000" time="17105466.000000"/>
+                <curve1 nominalAmplitude="0.010000" nominalAmplitudeVariation="0.010000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.007638" period="581406016.000000" time="83362240.000000"/>
+            </stats>
+            <stats fillType="STRAWBERRY" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="27681762.000000">
+                <curveBaseCurve nominalAmplitude="0.010000" nominalAmplitudeVariation="0.037500" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.027246" period="79089296.000000" time="19772324.000000"/>
+                <curve1 nominalAmplitude="0.005000" nominalAmplitudeVariation="0.005000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.009469" period="523675744.000000" time="453601152.000000"/>
+            </stats>
+            <stats fillType="GOATMILK" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.040000" nominalAmplitudeVariation="0.150000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.035936" period="68632776.000000" time="22075584.000000"/>
+                <curve1 nominalAmplitude="0.020000" nominalAmplitudeVariation="0.020000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.010243" period="498529312.000000" time="330614080.000000"/>
+            </stats>
+            <stats fillType="APPLEJUICE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.080000" nominalAmplitudeVariation="0.300000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.161150" period="94488992.000000" time="48248908.000000"/>
+                <curve1 nominalAmplitude="0.040000" nominalAmplitudeVariation="0.040000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.020891" period="472765760.000000" time="404507584.000000"/>
+            </stats>
+            <stats fillType="FRIES" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="50600000.000000">
+                <curveBaseCurve nominalAmplitude="0.100800" nominalAmplitudeVariation="0.378000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.228347" period="51758620.000000" time="12939655.000000"/>
+                <curve1 nominalAmplitude="0.050400" nominalAmplitudeVariation="0.050400" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.088018" period="587591808.000000" time="267304384.000000"/>
+            </stats>
+            <stats fillType="LETTUCERED" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.076800" nominalAmplitudeVariation="0.288000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.199164" period="94349368.000000" time="58999912.000000"/>
+                <curve1 nominalAmplitude="0.038400" nominalAmplitudeVariation="0.038400" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.023466" period="481242080.000000" time="32763686.000000"/>
+            </stats>
+            <stats fillType="MELON" received="1999.823242" paid="4020.624023" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.088000" nominalAmplitudeVariation="0.330000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.048364" period="84798232.000000" time="31444952.000000"/>
+                <curve1 nominalAmplitude="0.044000" nominalAmplitudeVariation="0.044000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.072594" period="471581152.000000" time="354395168.000000"/>
+            </stats>
+        </sellingStation>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/Ets/Ets.xml" id="44" position="792.01702880859 188.7859954834 -549.38598632813" rotation="0 60.000001669652 0" age="14.000000" price="1.000000" farmId="0" mapBoundId="EtsFrance">
+        <sellingStation>
+            <stats fillType="WHEAT" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.013480" nominalAmplitudeVariation="0.050550" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.024190" period="55849588.000000" time="17530438.000000"/>
+                <curve1 nominalAmplitude="0.006740" nominalAmplitudeVariation="0.006740" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.002351" period="480274304.000000" time="98415720.000000"/>
+            </stats>
+            <stats fillType="BARLEY" received="1293.085083" paid="355.764099" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="34825860.000000">
+                <curveBaseCurve nominalAmplitude="0.012520" nominalAmplitudeVariation="0.046950" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.027086" period="51374540.000000" time="38530904.000000"/>
+                <curve1 nominalAmplitude="0.006260" nominalAmplitudeVariation="0.006260" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.007208" period="538589248.000000" time="98978240.000000"/>
+            </stats>
+            <stats fillType="OAT" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="2698731.250000">
+                <curveBaseCurve nominalAmplitude="0.021280" nominalAmplitudeVariation="0.079800" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.059174" period="43685312.000000" time="32763984.000000"/>
+                <curve1 nominalAmplitude="0.010640" nominalAmplitudeVariation="0.010640" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.008939" period="514584928.000000" time="478589920.000000"/>
+            </stats>
+            <stats fillType="CANOLA" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="31362826.000000">
+                <curveBaseCurve nominalAmplitude="0.024120" nominalAmplitudeVariation="0.090450" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.012908" period="72364184.000000" time="18091046.000000"/>
+                <curve1 nominalAmplitude="0.012060" nominalAmplitudeVariation="0.012060" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.002046" period="517020096.000000" time="13852349.000000"/>
+            </stats>
+            <stats fillType="SORGHUM" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.017200" nominalAmplitudeVariation="0.064500" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.001765" period="92376376.000000" time="45577964.000000"/>
+                <curve1 nominalAmplitude="0.008600" nominalAmplitudeVariation="0.008600" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.010355" period="416173984.000000" time="306098976.000000"/>
+            </stats>
+            <stats fillType="SUNFLOWER" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.026920" nominalAmplitudeVariation="0.100950" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.050087" period="53471316.000000" time="15997588.000000"/>
+                <curve1 nominalAmplitude="0.013460" nominalAmplitudeVariation="0.013460" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.004978" period="601322944.000000" time="323479424.000000"/>
+            </stats>
+            <stats fillType="SOYBEAN" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="24543658.000000">
+                <curveBaseCurve nominalAmplitude="0.031120" nominalAmplitudeVariation="0.116700" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.044278" period="64194100.000000" time="16048525.000000"/>
+                <curve1 nominalAmplitude="0.015560" nominalAmplitudeVariation="0.015560" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.025318" period="515298432.000000" time="57027484.000000"/>
+            </stats>
+            <stats fillType="MAIZE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="40055232.000000">
+                <curveBaseCurve nominalAmplitude="0.015200" nominalAmplitudeVariation="0.057000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.027626" period="92796248.000000" time="69597184.000000"/>
+                <curve1 nominalAmplitude="0.007600" nominalAmplitudeVariation="0.007600" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.009602" period="538381312.000000" time="292524416.000000"/>
+            </stats>
+            <stats fillType="POTATO" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.006880" nominalAmplitudeVariation="0.025800" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.019852" period="89883248.000000" time="87902168.000000"/>
+                <curve1 nominalAmplitude="0.003440" nominalAmplitudeVariation="0.003440" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.000525" period="575731968.000000" time="362563200.000000"/>
+            </stats>
+            <stats fillType="SUGARBEET" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="22483868.000000">
+                <curveBaseCurve nominalAmplitude="0.004880" nominalAmplitudeVariation="0.018300" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.001168" period="47340964.000000" time="11835241.000000"/>
+                <curve1 nominalAmplitude="0.002440" nominalAmplitudeVariation="0.002440" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.002056" period="505941024.000000" time="432661664.000000"/>
+            </stats>
+            <stats fillType="SUGARCANE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="8637337.000000">
+                <curveBaseCurve nominalAmplitude="0.004760" nominalAmplitudeVariation="0.017850" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.006283" period="44666356.000000" time="33499766.000000"/>
+                <curve1 nominalAmplitude="0.002380" nominalAmplitudeVariation="0.002380" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.003402" period="587369408.000000" time="433427488.000000"/>
+            </stats>
+            <stats fillType="GRAINGRIST" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="40553192.000000">
+                <curveBaseCurve nominalAmplitude="0.040000" nominalAmplitudeVariation="0.150000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.055615" period="43409356.000000" time="32557016.000000"/>
+                <curve1 nominalAmplitude="0.020000" nominalAmplitudeVariation="0.020000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.034959" period="419883456.000000" time="164228960.000000"/>
+            </stats>
+        </sellingStation>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/Marcket/Marcket.xml" id="45" position="-113.22499847412 194.37899780273 -618.04302978516" rotation="0 -45.000001252239 0" age="14.000000" price="1.000000" farmId="0" mapBoundId="Marcket">
+        <sellingStation>
+            <stats fillType="GRAPE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="6605042.000000">
+                <curveBaseCurve nominalAmplitude="0.024120" nominalAmplitudeVariation="0.090450" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.002146" period="50488184.000000" time="37866136.000000"/>
+                <curve1 nominalAmplitude="0.012060" nominalAmplitudeVariation="0.012060" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.017700" period="530224544.000000" time="40443560.000000"/>
+            </stats>
+            <stats fillType="OLIVE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="40648976.000000">
+                <curveBaseCurve nominalAmplitude="0.024120" nominalAmplitudeVariation="0.090450" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.026544" period="77199216.000000" time="19299804.000000"/>
+                <curve1 nominalAmplitude="0.012060" nominalAmplitudeVariation="0.012060" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.005862" period="425528832.000000" time="371335552.000000"/>
+            </stats>
+            <stats fillType="EGG" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.044800" nominalAmplitudeVariation="0.168000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.101708" period="53986148.000000" time="1213163.750000"/>
+                <curve1 nominalAmplitude="0.022400" nominalAmplitudeVariation="0.022400" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.043913" period="413626208.000000" time="166637632.000000"/>
+            </stats>
+            <stats fillType="FLOUR" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="50637332.000000">
+                <curveBaseCurve nominalAmplitude="0.022800" nominalAmplitudeVariation="0.085500" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.030062" period="67400192.000000" time="50550144.000000"/>
+                <curve1 nominalAmplitude="0.011400" nominalAmplitudeVariation="0.011400" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.003732" period="508330880.000000" time="33701220.000000"/>
+            </stats>
+            <stats fillType="BREAD" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="27405154.000000">
+                <curveBaseCurve nominalAmplitude="0.060800" nominalAmplitudeVariation="0.228000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.016321" period="59990996.000000" time="14997749.000000"/>
+                <curve1 nominalAmplitude="0.030400" nominalAmplitudeVariation="0.030400" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.042176" period="439703776.000000" time="285234560.000000"/>
+            </stats>
+            <stats fillType="CAKE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="22400866.000000">
+                <curveBaseCurve nominalAmplitude="0.145200" nominalAmplitudeVariation="0.544500" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.364921" period="66630168.000000" time="16657542.000000"/>
+                <curve1 nominalAmplitude="0.072600" nominalAmplitudeVariation="0.072600" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.008621" period="547936448.000000" time="445711680.000000"/>
+            </stats>
+            <stats fillType="BUTTER" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.036000" nominalAmplitudeVariation="0.135000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.068052" period="50617484.000000" time="13469337.000000"/>
+                <curve1 nominalAmplitude="0.018000" nominalAmplitudeVariation="0.018000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.003709" period="561351040.000000" time="164566960.000000"/>
+            </stats>
+            <stats fillType="CHEESE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.072000" nominalAmplitudeVariation="0.270000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.115910" period="49247944.000000" time="20949322.000000"/>
+                <curve1 nominalAmplitude="0.036000" nominalAmplitudeVariation="0.036000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.020849" period="439111168.000000" time="347933568.000000"/>
+            </stats>
+            <stats fillType="FABRIC" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.120000" nominalAmplitudeVariation="0.450000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.269210" period="93647872.000000" time="80315296.000000"/>
+                <curve1 nominalAmplitude="0.060000" nominalAmplitudeVariation="0.060000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.093454" period="565772288.000000" time="52810088.000000"/>
+            </stats>
+            <stats fillType="CLOTHES" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.320000" nominalAmplitudeVariation="1.200000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="1.242502" period="94330808.000000" time="8387880.000000"/>
+                <curve1 nominalAmplitude="0.160000" nominalAmplitudeVariation="0.160000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.257233" period="474311424.000000" time="356623936.000000"/>
+            </stats>
+            <stats fillType="SUGAR" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="47823452.000000">
+                <curveBaseCurve nominalAmplitude="0.020000" nominalAmplitudeVariation="0.075000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.030941" period="44791768.000000" time="33593824.000000"/>
+                <curve1 nominalAmplitude="0.010000" nominalAmplitudeVariation="0.010000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.019650" period="559411712.000000" time="457240224.000000"/>
+            </stats>
+            <stats fillType="HONEY" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="39487076.000000">
+                <curveBaseCurve nominalAmplitude="0.040000" nominalAmplitudeVariation="0.150000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.034304" period="69513976.000000" time="52135480.000000"/>
+                <curve1 nominalAmplitude="0.020000" nominalAmplitudeVariation="0.020000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.017721" period="590130624.000000" time="366895296.000000"/>
+            </stats>
+            <stats fillType="CEREAL" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="38238992.000000">
+                <curveBaseCurve nominalAmplitude="0.094000" nominalAmplitudeVariation="0.352500" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.039274" period="51928904.000000" time="38946680.000000"/>
+                <curve1 nominalAmplitude="0.047000" nominalAmplitudeVariation="0.047000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.072233" period="467041888.000000" time="293732160.000000"/>
+            </stats>
+            <stats fillType="SUNFLOWER_OIL" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.071200" nominalAmplitudeVariation="0.267000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.115939" period="53370404.000000" time="52270932.000000"/>
+                <curve1 nominalAmplitude="0.035600" nominalAmplitudeVariation="0.035600" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.050289" period="431888448.000000" time="379964576.000000"/>
+            </stats>
+            <stats fillType="CANOLA_OIL" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="18343654.000000">
+                <curveBaseCurve nominalAmplitude="0.065600" nominalAmplitudeVariation="0.246000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.031333" period="89055984.000000" time="22263996.000000"/>
+                <curve1 nominalAmplitude="0.032800" nominalAmplitudeVariation="0.032800" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.035703" period="467450336.000000" time="362543168.000000"/>
+            </stats>
+            <stats fillType="OLIVE_OIL" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.097600" nominalAmplitudeVariation="0.366000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.211501" period="64286064.000000" time="23906470.000000"/>
+                <curve1 nominalAmplitude="0.048800" nominalAmplitudeVariation="0.048800" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.070740" period="486977568.000000" time="203577072.000000"/>
+            </stats>
+            <stats fillType="RAISINS" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="22400866.000000">
+                <curveBaseCurve nominalAmplitude="0.056000" nominalAmplitudeVariation="0.210000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.145138" period="74103968.000000" time="55577976.000000"/>
+                <curve1 nominalAmplitude="0.028000" nominalAmplitudeVariation="0.028000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.047944" period="405450048.000000" time="77023296.000000"/>
+            </stats>
+            <stats fillType="GRAPEJUICE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="27405154.000000">
+                <curveBaseCurve nominalAmplitude="0.064000" nominalAmplitudeVariation="0.240000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.097665" period="57908920.000000" time="43431688.000000"/>
+                <curve1 nominalAmplitude="0.032000" nominalAmplitudeVariation="0.032000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.046012" period="574340992.000000" time="255478128.000000"/>
+            </stats>
+            <stats fillType="LETTUCE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="24460594.000000">
+                <curveBaseCurve nominalAmplitude="0.039600" nominalAmplitudeVariation="0.148500" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.062054" period="71065176.000000" time="53298880.000000"/>
+                <curve1 nominalAmplitude="0.019800" nominalAmplitudeVariation="0.019800" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.025324" period="484291456.000000" time="405671648.000000"/>
+            </stats>
+            <stats fillType="TOMATO" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="33409916.000000">
+                <curveBaseCurve nominalAmplitude="0.020000" nominalAmplitudeVariation="0.075000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.017553" period="69628904.000000" time="52221680.000000"/>
+                <curve1 nominalAmplitude="0.010000" nominalAmplitudeVariation="0.010000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.000974" period="584855808.000000" time="395374720.000000"/>
+            </stats>
+            <stats fillType="STRAWBERRY" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="16343911.000000">
+                <curveBaseCurve nominalAmplitude="0.010000" nominalAmplitudeVariation="0.037500" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.029930" period="57935008.000000" time="14483752.000000"/>
+                <curve1 nominalAmplitude="0.005000" nominalAmplitudeVariation="0.005000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.005979" period="423467200.000000" time="69234352.000000"/>
+            </stats>
+            <stats fillType="CHOCOLATE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="45697292.000000">
+                <curveBaseCurve nominalAmplitude="0.080000" nominalAmplitudeVariation="0.300000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.127548" period="81346864.000000" time="61010148.000000"/>
+                <curve1 nominalAmplitude="0.040000" nominalAmplitudeVariation="0.040000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.001800" period="532104128.000000" time="172105984.000000"/>
+            </stats>
+            <stats fillType="FURNITURE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.080000" nominalAmplitudeVariation="0.300000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.111592" period="77925592.000000" time="33740016.000000"/>
+                <curve1 nominalAmplitude="0.040000" nominalAmplitudeVariation="0.040000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.016776" period="568892544.000000" time="96621120.000000"/>
+            </stats>
+            <stats fillType="GOATMILK" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.040000" nominalAmplitudeVariation="0.150000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.011143" period="50390056.000000" time="18513300.000000"/>
+                <curve1 nominalAmplitude="0.020000" nominalAmplitudeVariation="0.020000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.023179" period="468035744.000000" time="320665376.000000"/>
+            </stats>
+            <stats fillType="LETTUCERED" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="22400866.000000">
+                <curveBaseCurve nominalAmplitude="0.064000" nominalAmplitudeVariation="0.240000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.058325" period="49473772.000000" time="12368443.000000"/>
+                <curve1 nominalAmplitude="0.032000" nominalAmplitudeVariation="0.032000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.044846" period="477508608.000000" time="273194080.000000"/>
+            </stats>
+            <stats fillType="APPLEJUICE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.080000" nominalAmplitudeVariation="0.300000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.216462" period="92130040.000000" time="74587976.000000"/>
+                <curve1 nominalAmplitude="0.040000" nominalAmplitudeVariation="0.040000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.018677" period="418604224.000000" time="337349952.000000"/>
+            </stats>
+            <stats fillType="FRIES" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.084000" nominalAmplitudeVariation="0.315000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.277659" period="84320352.000000" time="68656800.000000"/>
+                <curve1 nominalAmplitude="0.042000" nominalAmplitudeVariation="0.042000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.064200" period="511801312.000000" time="104235992.000000"/>
+            </stats>
+            <stats fillType="NEWPALLET" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.010000" nominalAmplitudeVariation="0.037500" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.017504" period="79762224.000000" time="53442788.000000"/>
+                <curve1 nominalAmplitude="0.005000" nominalAmplitudeVariation="0.005000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.007206" period="416028320.000000" time="339674688.000000"/>
+            </stats>
+            <stats fillType="APPLE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="46468104.000000">
+                <curveBaseCurve nominalAmplitude="0.024000" nominalAmplitudeVariation="0.090000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.002514" period="50496012.000000" time="12624003.000000"/>
+                <curve1 nominalAmplitude="0.012000" nominalAmplitudeVariation="0.012000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.013732" period="487513632.000000" time="455551872.000000"/>
+            </stats>
+            <stats fillType="BEUGNON" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.100800" nominalAmplitudeVariation="0.378000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.447872" period="62130204.000000" time="42937704.000000"/>
+                <curve1 nominalAmplitude="0.050400" nominalAmplitudeVariation="0.050400" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.088588" period="515892480.000000" time="350400608.000000"/>
+            </stats>
+            <stats fillType="MELON" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="38803044.000000">
+                <curveBaseCurve nominalAmplitude="0.080000" nominalAmplitudeVariation="0.300000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.094744" period="86395152.000000" time="21598788.000000"/>
+                <curve1 nominalAmplitude="0.040000" nominalAmplitudeVariation="0.040000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.079580" period="563023552.000000" time="505204896.000000"/>
+            </stats>
+        </sellingStation>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/sellingStationGrainElevator/sellingStationGrainElevator.xml" id="46" position="-679.46899414063 211.16299438477 -837.29797363281" rotation="0 30.000000834826 0" age="14.000000" price="1.000000" farmId="0" mapBoundId="sellingStationGrainElevator01">
+        <sellingStation>
+            <stats fillType="WHEAT" received="583.374023" paid="166.731781" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.013480" nominalAmplitudeVariation="0.050550" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.016153" period="92701584.000000" time="6134043.000000"/>
+                <curve1 nominalAmplitude="0.006740" nominalAmplitudeVariation="0.006740" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.004005" period="479783168.000000" time="270946656.000000"/>
+            </stats>
+            <stats fillType="BARLEY" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="49751136.000000">
+                <curveBaseCurve nominalAmplitude="0.012520" nominalAmplitudeVariation="0.046950" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.028495" period="89196312.000000" time="66897232.000000"/>
+                <curve1 nominalAmplitude="0.006260" nominalAmplitudeVariation="0.006260" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.006586" period="514657568.000000" time="482550432.000000"/>
+            </stats>
+            <stats fillType="OAT" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.021280" nominalAmplitudeVariation="0.079800" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.032385" period="50463604.000000" time="30876556.000000"/>
+                <curve1 nominalAmplitude="0.010640" nominalAmplitudeVariation="0.010640" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.005838" period="534386784.000000" time="369081824.000000"/>
+            </stats>
+            <stats fillType="CANOLA" received="32000.000000" paid="23566.960938" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="35841760.000000">
+                <curveBaseCurve nominalAmplitude="0.024120" nominalAmplitudeVariation="0.090450" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.018884" period="84676000.000000" time="63507000.000000"/>
+                <curve1 nominalAmplitude="0.012060" nominalAmplitudeVariation="0.012060" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.003243" period="582788992.000000" time="277120448.000000"/>
+            </stats>
+            <stats fillType="SORGHUM" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.017200" nominalAmplitudeVariation="0.064500" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.007900" period="90507360.000000" time="34786968.000000"/>
+                <curve1 nominalAmplitude="0.008600" nominalAmplitudeVariation="0.008600" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.016343" period="473473760.000000" time="272341408.000000"/>
+            </stats>
+            <stats fillType="SUNFLOWER" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="27261978.000000">
+                <curveBaseCurve nominalAmplitude="0.026920" nominalAmplitudeVariation="0.100950" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.096717" period="49078672.000000" time="12269668.000000"/>
+                <curve1 nominalAmplitude="0.013460" nominalAmplitudeVariation="0.013460" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.000879" period="500457408.000000" time="442523104.000000"/>
+            </stats>
+            <stats fillType="SOYBEAN" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.031120" nominalAmplitudeVariation="0.116700" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.079447" period="85643584.000000" time="23498926.000000"/>
+                <curve1 nominalAmplitude="0.015560" nominalAmplitudeVariation="0.015560" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.001623" period="412204384.000000" time="334106752.000000"/>
+            </stats>
+            <stats fillType="MAIZE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="18260654.000000">
+                <curveBaseCurve nominalAmplitude="0.015200" nominalAmplitudeVariation="0.057000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.028570" period="55805180.000000" time="13951295.000000"/>
+                <curve1 nominalAmplitude="0.007600" nominalAmplitudeVariation="0.007600" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.006199" period="504009696.000000" time="456384992.000000"/>
+            </stats>
+            <stats fillType="POTATO" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="24377590.000000">
+                <curveBaseCurve nominalAmplitude="0.006880" nominalAmplitudeVariation="0.025800" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.004409" period="79254848.000000" time="59441136.000000"/>
+                <curve1 nominalAmplitude="0.003440" nominalAmplitudeVariation="0.003440" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.001719" period="566023424.000000" time="434797440.000000"/>
+            </stats>
+            <stats fillType="SUGARBEET" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="8637332.000000">
+                <curveBaseCurve nominalAmplitude="0.004880" nominalAmplitudeVariation="0.018300" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.008095" period="53189212.000000" time="39891908.000000"/>
+                <curve1 nominalAmplitude="0.002440" nominalAmplitudeVariation="0.002440" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.000637" period="510461632.000000" time="401169056.000000"/>
+            </stats>
+            <stats fillType="SUGARCANE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="22317866.000000">
+                <curveBaseCurve nominalAmplitude="0.004760" nominalAmplitudeVariation="0.017850" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.000707" period="62808324.000000" time="47106244.000000"/>
+                <curve1 nominalAmplitude="0.002380" nominalAmplitudeVariation="0.002380" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.002986" period="510356640.000000" time="219006512.000000"/>
+            </stats>
+            <stats fillType="GRAINGRIST" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.040000" nominalAmplitudeVariation="0.150000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.125234" period="82450904.000000" time="38873380.000000"/>
+                <curve1 nominalAmplitude="0.020000" nominalAmplitudeVariation="0.020000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.020190" period="580234560.000000" time="169765648.000000"/>
+            </stats>
+        </sellingStation>
+    </placeable>
+    <placeable filename="data/placeables/lizard/weighingStation/weighingStationLarge/weighingStationLarge.xml" id="47" position="-714.25201416016 210.99200439453 -882.47399902344" rotation="-180.00000500896 50.000000253012 -180.00000500896" age="14.000000" price="110000.000000" farmId="0" mapBoundId="GrainElevatorWeighingStation01"/>
+    <placeable filename="data/placeables/lizard/sellingPoints/bhp/bhp.xml" id="48" position="-193.75799560547 182.6130065918 -305.36099243164" rotation="0 0 0" age="14.000000" price="40000.000000" farmId="0" mapBoundId="bhp01">
+        <sellingStation>
+            <stats fillType="ROUNDBALE_WOOD" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="27124730.000000">
+                <curveBaseCurve nominalAmplitude="0.040000" nominalAmplitudeVariation="0.150000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.031996" period="80570392.000000" time="20142598.000000"/>
+                <curve1 nominalAmplitude="0.020000" nominalAmplitudeVariation="0.020000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.009971" period="446861632.000000" time="266218112.000000"/>
+            </stats>
+            <stats fillType="WOOD" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="50231116.000000">
+                <curveBaseCurve nominalAmplitude="0.040000" nominalAmplitudeVariation="0.150000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.107044" period="67884728.000000" time="50913544.000000"/>
+                <curve1 nominalAmplitude="0.020000" nominalAmplitudeVariation="0.020000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.025085" period="471795072.000000" time="197274960.000000"/>
+            </stats>
+            <stats fillType="SQUAREBALE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.040000" nominalAmplitudeVariation="0.150000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.069507" period="89613680.000000" time="67734736.000000"/>
+                <curve1 nominalAmplitude="0.020000" nominalAmplitudeVariation="0.020000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.002328" period="477167392.000000" time="129803912.000000"/>
+            </stats>
+            <stats fillType="WOODCHIPS" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="41005184.000000">
+                <curveBaseCurve nominalAmplitude="0.012800" nominalAmplitudeVariation="0.048000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.030061" period="89258712.000000" time="22314678.000000"/>
+                <curve1 nominalAmplitude="0.006400" nominalAmplitudeVariation="0.006400" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.003948" period="495066336.000000" time="428253472.000000"/>
+            </stats>
+            <stats fillType="ROUNDBALE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="5157942.000000">
+                <curveBaseCurve nominalAmplitude="0.040000" nominalAmplitudeVariation="0.150000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.155301" period="44076556.000000" time="11019139.000000"/>
+                <curve1 nominalAmplitude="0.020000" nominalAmplitudeVariation="0.020000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.016496" period="504434720.000000" time="483415776.000000"/>
+            </stats>
+            <stats fillType="STRAW" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="27124730.000000">
+                <curveBaseCurve nominalAmplitude="0.001640" nominalAmplitudeVariation="0.006150" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.003559" period="93599856.000000" time="70199888.000000"/>
+                <curve1 nominalAmplitude="0.000820" nominalAmplitudeVariation="0.000820" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.000439" period="593767296.000000" time="269688960.000000"/>
+            </stats>
+        </sellingStation>
+    </placeable>
+    <placeable filename="data/placeables/mapFR/gasStation/gasStation02.xml" id="49" position="-159.67799377441 191.8090057373 -760.03198242188" rotation="0 90.000002504478 0" age="14.000000" price="1.000000" farmId="0" mapBoundId="gasStation02"/>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/sellingStationBales.xml" id="50" position="120.14399719238 182.68499755859 -707.82501220703" rotation="-180.00000500896 0 -180.00000500896" age="14.000000" price="1.000000" farmId="0" mapBoundId="sellingStationBales">
+        <sellingStation>
+            <stats fillType="SUGARBEET_CUT" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="42321516.000000">
+                <curveBaseCurve nominalAmplitude="0.006880" nominalAmplitudeVariation="0.025800" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.015106" period="87598064.000000" time="65698548.000000"/>
+                <curve1 nominalAmplitude="0.003440" nominalAmplitudeVariation="0.003440" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.002365" period="418072928.000000" time="110240312.000000"/>
+            </stats>
+            <stats fillType="ALFALFA_WINDROW" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="44691864.000000">
+                <curveBaseCurve nominalAmplitude="0.002600" nominalAmplitudeVariation="0.009750" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.002284" period="54620220.000000" time="40965164.000000"/>
+                <curve1 nominalAmplitude="0.001300" nominalAmplitudeVariation="0.001300" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.000054" period="448301408.000000" time="349700672.000000"/>
+            </stats>
+            <stats fillType="CHOPPEDMAIZE_FERMENTED" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.006160" nominalAmplitudeVariation="0.023100" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.008048" period="85743080.000000" time="41593504.000000"/>
+                <curve1 nominalAmplitude="0.003080" nominalAmplitudeVariation="0.003080" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.002605" period="462620160.000000" time="133763960.000000"/>
+            </stats>
+            <stats fillType="DRYGRASS_WINDROW" received="3823.395020" paid="203.652359" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.002240" nominalAmplitudeVariation="0.008400" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.002323" period="69935800.000000" time="66451752.000000"/>
+                <curve1 nominalAmplitude="0.001120" nominalAmplitudeVariation="0.001120" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.001542" period="533316992.000000" time="16911122.000000"/>
+            </stats>
+            <stats fillType="DRYALFALFA_WINDROW" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.003440" nominalAmplitudeVariation="0.012900" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.001090" period="51763112.000000" time="2122579.250000"/>
+                <curve1 nominalAmplitude="0.001720" nominalAmplitudeVariation="0.001720" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.003015" period="462186816.000000" time="273524640.000000"/>
+            </stats>
+            <stats fillType="GRASS_FERMENTED" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.006160" nominalAmplitudeVariation="0.023100" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.003008" period="78027928.000000" time="8637326.000000"/>
+                <curve1 nominalAmplitude="0.003080" nominalAmplitudeVariation="0.003080" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.005629" period="588702784.000000" time="224957168.000000"/>
+            </stats>
+            <stats fillType="SILAGE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.006840" nominalAmplitudeVariation="0.025650" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.013620" period="69212864.000000" time="41514804.000000"/>
+                <curve1 nominalAmplitude="0.003420" nominalAmplitudeVariation="0.003420" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.005541" period="408963520.000000" time="200455984.000000"/>
+            </stats>
+            <stats fillType="GRASS_WINDROW" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="2549315.500000">
+                <curveBaseCurve nominalAmplitude="0.001800" nominalAmplitudeVariation="0.006750" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.000956" period="78406568.000000" time="19601642.000000"/>
+                <curve1 nominalAmplitude="0.000900" nominalAmplitudeVariation="0.000900" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.000363" period="562615744.000000" time="559435968.000000"/>
+            </stats>
+            <stats fillType="STRAW" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.001640" nominalAmplitudeVariation="0.006150" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.003773" period="44177456.000000" time="35218776.000000"/>
+                <curve1 nominalAmplitude="0.000820" nominalAmplitudeVariation="0.000820" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.000721" period="419189952.000000" time="416550432.000000"/>
+            </stats>
+        </sellingStation>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/friterie/friterie.xml" id="51" position="-88.86499786377 191.96099853516 -704.9990234375" rotation="0 0 0" age="14.000000" price="1.000000" farmId="0" mapBoundId="friterie01">
+        <sellingStation>
+            <stats fillType="CANOLA_OIL" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="16006891.000000">
+                <curveBaseCurve nominalAmplitude="0.065600" nominalAmplitudeVariation="0.246000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.028768" period="87179016.000000" time="21794754.000000"/>
+                <curve1 nominalAmplitude="0.032800" nominalAmplitudeVariation="0.032800" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.007937" period="433926368.000000" time="106785944.000000"/>
+            </stats>
+            <stats fillType="POTATO" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="24128586.000000">
+                <curveBaseCurve nominalAmplitude="0.005504" nominalAmplitudeVariation="0.020640" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.008727" period="55113996.000000" time="41335496.000000"/>
+                <curve1 nominalAmplitude="0.002752" nominalAmplitudeVariation="0.002752" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.005498" period="575352960.000000" time="540436096.000000"/>
+            </stats>
+            <stats fillType="BREAD" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.060800" nominalAmplitudeVariation="0.228000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.010334" period="74697360.000000" time="22203330.000000"/>
+                <curve1 nominalAmplitude="0.030400" nominalAmplitudeVariation="0.030400" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.011053" period="586746176.000000" time="200909632.000000"/>
+            </stats>
+            <stats fillType="TOMATO" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.020000" nominalAmplitudeVariation="0.075000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.031283" period="80912160.000000" time="4173084.750000"/>
+                <curve1 nominalAmplitude="0.010000" nominalAmplitudeVariation="0.010000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.002280" period="483475168.000000" time="252145520.000000"/>
+            </stats>
+            <stats fillType="GRAPEJUICE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.064000" nominalAmplitudeVariation="0.240000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.169075" period="71671552.000000" time="50717824.000000"/>
+                <curve1 nominalAmplitude="0.032000" nominalAmplitudeVariation="0.032000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.060656" period="475924960.000000" time="251038640.000000"/>
+            </stats>
+            <stats fillType="OLIVE_OIL" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="41578048.000000">
+                <curveBaseCurve nominalAmplitude="0.097600" nominalAmplitudeVariation="0.366000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.226117" period="72701784.000000" time="54526336.000000"/>
+                <curve1 nominalAmplitude="0.048800" nominalAmplitudeVariation="0.048800" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.012516" period="452258240.000000" time="66037420.000000"/>
+            </stats>
+            <stats fillType="SUNFLOWER_OIL" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.071200" nominalAmplitudeVariation="0.267000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.148191" period="60074392.000000" time="4898119.500000"/>
+                <curve1 nominalAmplitude="0.035600" nominalAmplitudeVariation="0.035600" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.054688" period="412391360.000000" time="17903646.000000"/>
+            </stats>
+            <stats fillType="CHEESE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.072000" nominalAmplitudeVariation="0.270000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.073708" period="79039080.000000" time="454099.531250"/>
+                <curve1 nominalAmplitude="0.036000" nominalAmplitudeVariation="0.036000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.061422" period="448674976.000000" time="283837888.000000"/>
+            </stats>
+            <stats fillType="BEUGNON" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="41149544.000000">
+                <curveBaseCurve nominalAmplitude="0.100800" nominalAmplitudeVariation="0.378000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.055641" period="85717352.000000" time="64288016.000000"/>
+                <curve1 nominalAmplitude="0.050400" nominalAmplitudeVariation="0.050400" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.079171" period="540195904.000000" time="87940256.000000"/>
+            </stats>
+            <stats fillType="APPLEJUICE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="true" nextPlateauNumber="0" plateauDuration="51840000" meanValue="0.000000" plateauTime="43083204.000000">
+                <curveBaseCurve nominalAmplitude="0.080000" nominalAmplitudeVariation="0.300000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.112463" period="53426172.000000" time="13356543.000000"/>
+                <curve1 nominalAmplitude="0.040000" nominalAmplitudeVariation="0.040000" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.036068" period="541755136.000000" time="508050144.000000"/>
+            </stats>
+            <stats fillType="FRIES" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.100800" nominalAmplitudeVariation="0.378000" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="-0.040078" period="56177836.000000" time="27961362.000000"/>
+                <curve1 nominalAmplitude="0.050400" nominalAmplitudeVariation="0.050400" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.093520" period="472114560.000000" time="160784176.000000"/>
+            </stats>
+            <stats fillType="LETTUCE" received="0.000000" paid="0.000000" priceVersion="1" isInPlateau="false" nextPlateauNumber="1" plateauDuration="51840000" meanValue="0.000000" plateauTime="0.000000">
+                <curveBaseCurve nominalAmplitude="0.039600" nominalAmplitudeVariation="0.148500" amplitudeDistribution="2" nominalPeriod="172800000" nominalPeriodVariation="64800000" periodDistribution="1" amplitude="0.146497" period="47890612.000000" time="25889556.000000"/>
+                <curve1 nominalAmplitude="0.019800" nominalAmplitudeVariation="0.019800" amplitudeDistribution="1" nominalPeriod="604800000" nominalPeriodVariation="120960000" periodDistribution="1" amplitude="0.011395" period="427992864.000000" time="257257408.000000"/>
+            </stats>
+        </sellingStation>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/sellingStationVehicles/sellingStationVehicles.xml" id="52" position="-152.80999755859 191.78700256348 -793.09197998047" rotation="-180.00000500896 -90.000002504478 180.00000500896" age="14.000000" price="1.000000" farmId="0" mapBoundId="sellingStationVehicles"/>
+    <placeable filename="data/placeables/planET/bga1mw/bga1mw.xml" id="53" position="-726.84600830078 198.43499755859 -609.88000488281" rotation="0 0 0" age="14.000000" price="1500000.000000" farmId="0" mapBoundId="bga">
+        <productionPoint>
+            <production id="biogas" isEnabled="true"/>
+            <production id="biogasLiquidManure" isEnabled="true"/>
+            <production id="biogasManure" isEnabled="true"/>
+            <production id="biogasSugarbeetCut" isEnabled="true"/>
+            <production id="biogasChoppedMaize" isEnabled="true"/>
+            <production id="biogasGrassFermented" isEnabled="true"/>
+            <priorityFillType>SUGARBEET_CUT 10</priorityFillType>
+            <priorityFillType>LIQUIDMANURE 10</priorityFillType>
+            <priorityFillType>GRASS_FERMENTED 10</priorityFillType>
+            <priorityFillType>SILAGE 10</priorityFillType>
+            <priorityFillType>CHOPPEDMAIZE_FERMENTED 10</priorityFillType>
+            <priorityFillType>MANURE 10</priorityFillType>
+            <storage farmId="0"/>
+        </productionPoint>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/bunkerSiloBGA/bgaBunkerSilo.xml" id="54" position="-778.86999511719 200.3450012207 -624.78900146484" rotation="0 90.000002504478 0" age="14.000000" price="140000.000000" farmId="0" mapBoundId="bgaBunkerSilo1">
+        <bunkerSilo state="0" fillLevel="0.000000" compactedFillLevel="0.000000" fermentingTime="0.000000" openedAtFront="false" openedAtBack="false" inputFillType="CHAFF" outputFillType="SILAGE"/>
+    </placeable>
+    <placeable modName="FS22_The_Valley_The_Old_Farm" filename="$moddir$FS22_The_Valley_The_Old_Farm/placeables/bunkerSiloBGA/bgaBunkerSilo.xml" id="55" position="-778.86999511719 200.3450012207 -590.30999755859" rotation="0 90.000002504478 0" age="14.000000" price="140000.000000" farmId="0" mapBoundId="bgaBunkerSilo2">
+        <bunkerSilo state="0" fillLevel="0.000000" compactedFillLevel="0.000000" fermentingTime="0.000000" openedAtFront="false" openedAtBack="false" inputFillType="CHAFF" outputFillType="SILAGE"/>
+    </placeable>
+    <placeable filename="data/placeables/lizard/weighingStation/weighingStationLarge/weighingStationLarge.xml" id="56" position="-600.53497314453 198.52499389648 -649.73901367188" rotation="-180.00000500896 13.354999728461 -180.00000500896" age="14.000000" price="110000.000000" farmId="0" mapBoundId="bgaWeighingStation01"/>
+    <placeable filename="data/placeables/lizard/weighingStation/weighingStationLarge/weighingStationLarge.xml" id="57" position="-720.94097900391 198.52499389648 -670.63299560547" rotation="0 -90.000002504478 0" age="14.000000" price="110000.000000" farmId="0" mapBoundId="bgaWeighingStation02"/>
+    <placeable filename="data/placeables/easySheds/easyShed01/easyShed01.xml" id="58" position="-655.36499023438 198.54499816895 -672.16900634766" rotation="0 0 0" age="14.000000" price="10000.000000" farmId="0" mapBoundId="bgaHall"/>
+    <placeable filename="data/placeables/lizard/fencesFarm/level03/fencesFarmLevel03Singleton.xml" id="59" position="100 -101 0" rotation="0 0 0" age="14.000000" price="0.000000" farmId="0">
+        <fence>
+            <segments>
+                <segment start="139.34477233887 -85.316925048828" end="143.36975257671 -89.793523518128" gateIndex="2">
+                    <animatedObject time="0.000000" direction="0"/>
+                </segment>
+                <segment start="143.36975097656 -89.793525695801" end="140.14608764648 -94.537582397461" first="false"/>
+                <segment start="140.14608764648 -94.537582397461" end="133.91212463379 -99.655670166016" first="false"/>
+                <segment start="133.91212463379 -99.655670166016" end="54.807758331299 -141.32153320313" first="false"/>
+                <segment start="54.807758331299 -141.32153320313" end="50.144165039063 -83.883422851563" first="false"/>
+                <segment start="349.20593261719 -478.18121337891" end="343.77497626748 -480.77834889672" gateIndex="2">
+                    <animatedObject time="0.000000" direction="0"/>
+                </segment>
+                <segment start="343.77496337891 -480.77835083008" end="332.17587280273 -484.91955566406" first="false"/>
+                <segment start="332.17587280273 -484.91955566406" end="296.67050170898 -391.32403564453" first="false"/>
+                <segment start="296.67050170898 -391.32403564453" end="311.33355712891 -380.89898681641" first="false"/>
+                <segment start="311.33355712891 -380.89898681641" end="385.32412719727 -374.82778930664" first="false"/>
+                <segment start="385.32412719727 -374.82778930664" end="468.44439697266 -375.79333496094" first="false"/>
+                <segment start="468.44439697266 -375.79333496094" end="468.17196655273 -451.79122924805" first="false"/>
+                <segment start="468.17196655273 -451.79122924805" end="402.87750244141 -451.75399780273" first="false"/>
+                <segment start="402.87750244141 -451.75399780273" end="367.08276367188 -467.5419921875" first="false"/>
+                <segment start="367.08276367188 -467.5419921875" end="349.20593261719 -478.18121337891" first="false" last="false"/>
+            </segments>
+        </fence>
+    </placeable>
+    <placeable filename="data/placeables/lizard/fencesResidential/level01/fencesResidentialLevel01Singleton.xml" id="60" position="100 -101 0" rotation="0 0 0" age="14.000000" price="0.000000" farmId="0">
+        <fence>
+            <segments>
+                <segment start="478.38226318359 290.83465576172" end="482.30864796961 289.72564634355" gateIndex="1">
+                    <animatedObject time="1.000000" direction="0"/>
+                </segment>
+            </segments>
+        </fence>
+    </placeable>
+    <placeable modName="FS22_Stihl_RE581" filename="$moddir$FS22_Stihl_RE581/Stihl_RE581.xml" id="61" position="456.92620849609 205.59561157227 365.92901611328" rotation="1.0382386996002 -27.578850745766 -0.52355966645172" age="13.000000" price="1550.000000" farmId="1"/>
+    <placeable filename="data/placeables/lizard/floodLights/level03/floodLight03.xml" id="62" position="378.74951171875 209.54475402832 250.0491027832" rotation="0 50.223921174762 0" age="11.000000" price="600.000000" farmId="1"/>
+    <placeable filename="data/placeables/lizard/floodLights/level04/floodLight04.xml" id="63" position="427.0751953125 210.24841308594 302.64733886719" rotation="0 89.50458839341 0" age="11.000000" price="1000.000000" farmId="1"/>
+    <placeable filename="data/placeables/lizard/floodLights/level03/floodLight03.xml" id="64" position="452.40594482422 206.97113037109 346.77136230469" rotation="0 94.421825992009 0" age="11.000000" price="600.000000" farmId="1"/>
+    <placeable filename="data/placeables/lizard/floodLights/level03/floodLight03.xml" id="65" position="511.67086791992 205.84956359863 345.90295410156" rotation="0 324.98146621872 0" age="11.000000" price="600.000000" farmId="1"/>
+    <placeable modName="FS22_HandPlantSaplings" filename="$moddir$FS22_HandPlantSaplings/placeables/handPlantSaplings.xml" id="66" position="108.66812896729 191.88716125488 -132.34080505371" rotation="0 192.20104513092 0" age="10.000000" price="3400.000000" farmId="1">
+        <FS22_HandPlantSaplings>
+            <handPlantSaplings>
+                <backpack fillLevel="0"/>
+                <storage fillLevel="0"/>
+            </handPlantSaplings>
+        </FS22_HandPlantSaplings>
+    </placeable>
+    <placeable modName="FS22_Molasses" filename="$moddir$FS22_Molasses/MolassesTank.xml" id="67" position="393.2815246582 210.24717712402 304.85247802734" rotation="0 236.00371763675 0" age="4.000000" price="5700.000000" farmId="1">
+        <silo>
+            <storage index="1" farmId="1">
+                <node fillType="MOLASSES" fillLevel="1681.888794"/>
+            </storage>
+        </silo>
+    </placeable>
+    <placeable modName="FS22_calfIgluSingle" filename="$moddir$FS22_calfIgluSingle/placeables/calfIglu/calfIglu.xml" id="68" position="482.92813110352 209.54476928711 253.2043762207" rotation="0 0 0" age="3.000000" price="500.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.200000">
+            <storage farmId="1">
+                <node fillType="STRAW" fillLevel="500.000000"/>
+            </storage>
+        </husbandry>
+        <husbandryAnimals eas_numOvercrowdingHours="0">
+            <clusters>
+                <animal subType="COW_HOLSTEIN" numAnimals="1" age="0" health="100" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFood>
+            <fillLevel fillType="SLIDER04" fillLevel="23.750000"/>
+            <fillLevel fillType="SLIDER03" fillLevel="47.500000"/>
+            <fillLevel fillType="SLIDER02" fillLevel="71.250000"/>
+            <fillLevel fillType="SLIDER01" fillLevel="95.000000"/>
+        </husbandryFood>
+        <manureHeap manureToDrop="4" manureToPick="0"/>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="0.000000"/>
+                <grazingDoneToday GRASS_WINDROW="false"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+    <placeable modName="FS22_calfIgluSingle" filename="$moddir$FS22_calfIgluSingle/placeables/calfIglu/calfIglu.xml" id="69" position="484.98098754883 209.54475402832 253.17179870605" rotation="0 0 0" age="3.000000" price="500.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.200000">
+            <storage farmId="1">
+                <node fillType="STRAW" fillLevel="500.000000"/>
+            </storage>
+        </husbandry>
+        <husbandryAnimals eas_numOvercrowdingHours="0">
+            <clusters>
+                <animal subType="COW_HOLSTEIN" numAnimals="1" age="0" health="100" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFood>
+            <fillLevel fillType="SLIDER04" fillLevel="23.750000"/>
+            <fillLevel fillType="SLIDER03" fillLevel="47.500000"/>
+            <fillLevel fillType="SLIDER02" fillLevel="71.250000"/>
+            <fillLevel fillType="SLIDER01" fillLevel="95.000000"/>
+        </husbandryFood>
+        <manureHeap manureToDrop="4" manureToPick="0"/>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="0.000000"/>
+                <grazingDoneToday GRASS_WINDROW="false"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+    <placeable modName="FS22_calfIgluSingle" filename="$moddir$FS22_calfIgluSingle/placeables/calfIglu/calfIglu.xml" id="70" position="486.88879394531 209.54476928711 253.13562011719" rotation="0 0 0" age="3.000000" price="500.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.200000">
+            <storage farmId="1">
+                <node fillType="STRAW" fillLevel="500.000000"/>
+            </storage>
+        </husbandry>
+        <husbandryAnimals eas_numOvercrowdingHours="0">
+            <clusters>
+                <animal subType="COW_HOLSTEIN" numAnimals="1" age="0" health="100" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFood>
+            <fillLevel fillType="SLIDER04" fillLevel="23.750000"/>
+            <fillLevel fillType="SLIDER03" fillLevel="47.500000"/>
+            <fillLevel fillType="SLIDER02" fillLevel="71.250000"/>
+            <fillLevel fillType="SLIDER01" fillLevel="95.000000"/>
+        </husbandryFood>
+        <manureHeap manureToDrop="4" manureToPick="0"/>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="0.000000"/>
+                <grazingDoneToday GRASS_WINDROW="false"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+    <placeable modName="FS22_calfIgluSingle" filename="$moddir$FS22_calfIgluSingle/placeables/calfIglu/calfIglu.xml" id="71" position="488.91644287109 209.54475402832 253.04858398438" rotation="0 0 0" age="3.000000" price="500.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.200000">
+            <storage farmId="1">
+                <node fillType="STRAW" fillLevel="500.000000"/>
+            </storage>
+        </husbandry>
+        <husbandryAnimals eas_numOvercrowdingHours="0">
+            <clusters>
+                <animal subType="COW_HOLSTEIN" numAnimals="1" age="0" health="100" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFood>
+            <fillLevel fillType="SLIDER04" fillLevel="23.750000"/>
+            <fillLevel fillType="SLIDER03" fillLevel="47.500000"/>
+            <fillLevel fillType="SLIDER02" fillLevel="71.250000"/>
+            <fillLevel fillType="SLIDER01" fillLevel="95.000000"/>
+        </husbandryFood>
+        <manureHeap manureToDrop="4" manureToPick="0"/>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="0.000000"/>
+                <grazingDoneToday GRASS_WINDROW="false"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+    <placeable modName="FS22_calfIgluSingle" filename="$moddir$FS22_calfIgluSingle/placeables/calfIglu/calfIglu.xml" id="72" position="490.89804077148 209.54475402832 253.0188293457" rotation="0 0 0" age="3.000000" price="500.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.200000">
+            <storage farmId="1">
+                <node fillType="STRAW" fillLevel="500.000000"/>
+            </storage>
+        </husbandry>
+        <husbandryAnimals eas_numOvercrowdingHours="0">
+            <clusters>
+                <animal subType="COW_HOLSTEIN" numAnimals="1" age="0" health="100" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFood>
+            <fillLevel fillType="SLIDER04" fillLevel="24.375000"/>
+            <fillLevel fillType="SLIDER03" fillLevel="48.750000"/>
+            <fillLevel fillType="SLIDER02" fillLevel="73.125000"/>
+            <fillLevel fillType="SLIDER01" fillLevel="97.500000"/>
+        </husbandryFood>
+        <manureHeap manureToDrop="4" manureToPick="0"/>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="0.000000"/>
+                <grazingDoneToday GRASS_WINDROW="false"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+    <placeable modName="FS22_waterPack" filename="$moddir$FS22_waterPack/fireHydrant.xml" id="73" position="452.48599243164 210.26826477051 301.29730224609" rotation="0 0 0" age="3.000000" price="500.000000" farmId="1"/>
+    <placeable modName="FS22_CowPastureSmall" filename="$moddir$FS22_CowPastureSmall/cowPastureSmall.xml" id="74" position="514.25 209.54475402832 236.75" rotation="0 270.00000068325 0" age="2.000000" price="9500.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="1.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="1.000000">
+            <storage farmId="1">
+                <node fillType="LIQUIDMANURE" fillLevel="2015.046265"/>
+                <node fillType="MANURE" fillLevel="1427.951294"/>
+                <node fillType="STRAW" fillLevel="9564.705078"/>
+            </storage>
+        </husbandry>
+        <husbandryAnimals eas_numOvercrowdingHours="0">
+            <clusters>
+                <animal subType="BULL_HOLSTEIN" numAnimals="2" age="3" health="100" reproduction="0"/>
+                <animal subType="COW_HOLSTEIN" numAnimals="3" age="3" health="100" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFood>
+            <fillLevel fillType="SLIDER04" fillLevel="1500.000000"/>
+            <fillLevel fillType="SLIDER03" fillLevel="3000.000000"/>
+            <fillLevel fillType="SLIDER02" fillLevel="4500.000000"/>
+            <fillLevel fillType="SLIDER01" fillLevel="6000.000000"/>
+        </husbandryFood>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="2428.816406"/>
+                <grazingDoneToday GRASS_WINDROW="true"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+    <placeable modName="FS22_powerLights" filename="$moddir$FS22_powerLights/powerLights180LA.xml" id="75" position="409.01602172852 212.16812133789 303.95544433594" rotation="0 358.24506121257 0" age="1.000000" price="1750.000000" farmId="1"/>
+    <placeable filename="data/placeables/pesslInstruments/imetosIMT300/imetosIMT300.xml" id="76" position="512.63800048828 218.13348388672 366.88006591797" rotation="0 0 0" age="1.000000" price="4200.000000" farmId="1"/>
+    <placeable modName="FS22_calfIgluSingle" filename="$moddir$FS22_calfIgluSingle/placeables/calfIglu/calfIglu.xml" id="77" position="489.20330810547 209.54475402832 249.8422088623" rotation="0 89.705457426711 0" age="0.000000" price="500.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.080000">
+            <storage farmId="1">
+                <node fillType="STRAW" fillLevel="500.000000"/>
+            </storage>
+        </husbandry>
+        <husbandryAnimals eas_numOvercrowdingHours="0">
+            <clusters>
+                <animal subType="BULL_HOLSTEIN" numAnimals="1" age="0" health="100" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFood>
+            <fillLevel fillType="SLIDER04" fillLevel="24.375000"/>
+            <fillLevel fillType="SLIDER03" fillLevel="48.750000"/>
+            <fillLevel fillType="SLIDER02" fillLevel="73.125000"/>
+            <fillLevel fillType="SLIDER01" fillLevel="97.500000"/>
+        </husbandryFood>
+        <manureHeap manureToDrop="14" manureToPick="0"/>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="0.000000"/>
+                <grazingDoneToday GRASS_WINDROW="false"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+    <placeable modName="FS22_calfIgluSingle" filename="$moddir$FS22_calfIgluSingle/placeables/calfIglu/calfIglu.xml" id="78" position="489.2878112793 209.54086303711 247.74374389648" rotation="0 89.705457426711 0" age="0.000000" price="500.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.080000">
+            <storage farmId="1">
+                <node fillType="STRAW" fillLevel="500.000000"/>
+            </storage>
+        </husbandry>
+        <husbandryAnimals eas_numOvercrowdingHours="0">
+            <clusters>
+                <animal subType="BULL_HOLSTEIN" numAnimals="1" age="0" health="100" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFood>
+            <fillLevel fillType="SLIDER04" fillLevel="24.375000"/>
+            <fillLevel fillType="SLIDER03" fillLevel="48.750000"/>
+            <fillLevel fillType="SLIDER02" fillLevel="73.125000"/>
+            <fillLevel fillType="SLIDER01" fillLevel="97.500000"/>
+        </husbandryFood>
+        <manureHeap manureToDrop="0" manureToPick="0"/>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="0.000000"/>
+                <grazingDoneToday GRASS_WINDROW="false"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+    <placeable modName="FS22_calfIgluSingle" filename="$moddir$FS22_calfIgluSingle/placeables/calfIglu/calfIglu.xml" id="79" position="489.32235717773 209.54086303711 245.65051269531" rotation="0 89.705457426711 0" age="0.000000" price="500.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.080000">
+            <storage farmId="1">
+                <node fillType="STRAW" fillLevel="500.000000"/>
+            </storage>
+        </husbandry>
+        <husbandryAnimals eas_numOvercrowdingHours="0">
+            <clusters>
+                <animal subType="BULL_HOLSTEIN" numAnimals="1" age="0" health="100" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFood>
+            <fillLevel fillType="SLIDER04" fillLevel="24.375000"/>
+            <fillLevel fillType="SLIDER03" fillLevel="48.750000"/>
+            <fillLevel fillType="SLIDER02" fillLevel="73.125000"/>
+            <fillLevel fillType="SLIDER01" fillLevel="97.500000"/>
+        </husbandryFood>
+        <manureHeap manureToDrop="0" manureToPick="0"/>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="0.000000"/>
+                <grazingDoneToday GRASS_WINDROW="false"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+    <placeable modName="FS22_calfIgluSingle" filename="$moddir$FS22_calfIgluSingle/placeables/calfIglu/calfIglu.xml" id="80" position="489.40753173828 209.54167175293 243.57389831543" rotation="0 89.705457426711 0" age="0.000000" price="500.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.080000">
+            <storage farmId="1">
+                <node fillType="STRAW" fillLevel="500.000000"/>
+            </storage>
+        </husbandry>
+        <husbandryAnimals eas_numOvercrowdingHours="0">
+            <clusters>
+                <animal subType="BULL_HOLSTEIN" numAnimals="1" age="0" health="100" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFood>
+            <fillLevel fillType="SLIDER04" fillLevel="24.375000"/>
+            <fillLevel fillType="SLIDER03" fillLevel="48.750000"/>
+            <fillLevel fillType="SLIDER02" fillLevel="73.125000"/>
+            <fillLevel fillType="SLIDER01" fillLevel="97.500000"/>
+        </husbandryFood>
+        <manureHeap manureToDrop="0" manureToPick="0"/>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="0.000000"/>
+                <grazingDoneToday GRASS_WINDROW="false"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+    <placeable modName="FS22_calfIgluSingle" filename="$moddir$FS22_calfIgluSingle/placeables/calfIglu/calfIglu.xml" id="81" position="489.52883911133 209.54475402832 241.37705993652" rotation="0 89.705457426711 0" age="0.000000" price="500.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+        <husbandry globalProductionFactor="0.080000">
+            <storage farmId="1">
+                <node fillType="STRAW" fillLevel="500.000000"/>
+            </storage>
+        </husbandry>
+        <husbandryAnimals eas_numOvercrowdingHours="0">
+            <clusters>
+                <animal subType="BULL_HOLSTEIN" numAnimals="1" age="0" health="100" reproduction="0"/>
+            </clusters>
+        </husbandryAnimals>
+        <husbandryFood>
+            <fillLevel fillType="SLIDER04" fillLevel="24.375000"/>
+            <fillLevel fillType="SLIDER03" fillLevel="48.750000"/>
+            <fillLevel fillType="SLIDER02" fillLevel="73.125000"/>
+            <fillLevel fillType="SLIDER01" fillLevel="97.500000"/>
+        </husbandryFood>
+        <manureHeap manureToDrop="0" manureToPick="0"/>
+        <FS22_EnhancedAnimalSystem>
+            <EnhancedAnimalSystem allowOvercrowding="false"/>
+        </FS22_EnhancedAnimalSystem>
+        <FS22_realismAddon_animalGrazing>
+            <realismAddon_animalGrazing>
+                <foodBuffer GRASS_WINDROW="0.000000"/>
+                <grazingDoneToday GRASS_WINDROW="false"/>
+            </realismAddon_animalGrazing>
+        </FS22_realismAddon_animalGrazing>
+    </placeable>
+</placeables>

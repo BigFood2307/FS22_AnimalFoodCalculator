@@ -4,15 +4,13 @@ from collections import Counter
 from animal_types import AnimalSubType
 from animal_organization import AnimalHubandry, AnimalCluster
 
-def findSubType(list, subType, type=None):
-	for idx, st in enumerate(list):
-		if (type == st.type or type is None) and subType == st.subType:
-			return idx
-	return -1
-		
+from utility import	findSubType
 
 baseXmlPath = "xmls/eas_animals.xml"
 overrideXmlPath = "xmls/afa_eas_animalDataOverride.xml"
+placeablesXml = "xmls/sample_placeables.xml"
+
+farmIds = [1]
 
 timeframe = 12
 
@@ -44,29 +42,18 @@ for st in subtypes:
 		print(st.type + "/" + st.subType)
 """
 
-cowIdx = findSubType(subtypes, "COW_HOLSTEIN")
-bullIdx = findSubType(subtypes, "BULL_HOLSTEIN")
-
-cluster1 = AnimalCluster(subtypes[cowIdx], 5, 31)
-cluster2 = AnimalCluster(subtypes[cowIdx], 10, 22)
-cluster3 = AnimalCluster(subtypes[bullIdx], 1, 32)
-
-pasture = AnimalHubandry()
-pasture.addCluster(cluster1)
-pasture.addCluster(cluster2)
-pasture.addCluster(cluster3)
+husbandries = AnimalHubandry.allFromPlaceables(placeablesXml, farmIds, subtypes)
 
 outputs = Counter()
 inputs = Counter()
 
 for month in range(timeframe):
-	outputs.update(pasture.calcOutputs(month))
-	inputs.update(pasture.calcInputs(month))
+	newIn, newOut = AnimalHubandry.calcInOutAll(husbandries, month, [8, 1000], ["COW_HOLSTEIN"])
+	outputs.update(newOut)
+	inputs.update(newIn)
 
 outputs = dict(outputs)
 inputs = dict(inputs)
-
-print()
 
 print("Next Years inputs:")
 for key in iter(inputs):
