@@ -86,3 +86,5 @@ print("Outputs:")
 for key in iter(outputs):
 	perDay = outputs[key]/(12*daysPerMonth)
 	print(key + ": " + str(outputs[key]) + " (" + str(perDay) + ")")
+
+input("Press Enter to finish")

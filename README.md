@@ -17,9 +17,19 @@ Then just run the script...
 
 The given amounts are for the entire timeframe, values in brackets behind it are average per day.
 
+## Executable
+
+For ease of use, I added a windows executable to the releases. Just unzip the file to a folder and run the .exe.
+If you move the exe, you have to move the xmls (at the very least the script_settings.xml, since its location is hard coded)
+
+As this is an executable, make sure you trust me before you run it. This could be anything!
+If someone wants to double check, this exe was created with pyinstaller version 5.13.0 using:
+
+	pyinstaller -F -n FS22_AnimalFoodCalculator main.py
+
 ## Python installation
 
-If you have no idea how to run this script but still trust me enough to run some code you dont understand, here is how:
+If you have no idea how to run this script without an executable but still trust me enough to run directly from code, here is how:
 
 * Install Python 3: https://www.python.org/downloads/
 * Open this folder in a command line: https://www.wikihow.com/Open-a-Folder-in-Cmd

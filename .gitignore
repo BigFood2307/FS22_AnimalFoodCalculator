@@ -20,6 +20,8 @@ var/
 .installed.cfg
 *.egg
 *.spec
+*.exe
+*.zip
 
 # Installer logs
 pip-log.txt
