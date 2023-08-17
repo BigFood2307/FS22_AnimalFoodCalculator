@@ -21,6 +21,8 @@ The given amounts are for the entire timeframe, values in brackets behind it are
 
 If you have no idea how to run this script but still trust me enough to run some code you dont understand, here is how:
 
+* Download this code from github
+* Unpack it into a folder, enter the folder with this README inside it
 * Install Python 3: https://www.python.org/downloads/
 * Open this folder in a command line: https://www.wikihow.com/Open-a-Folder-in-Cmd
 * Type 'python main.py' (without quotes)
