@@ -77,14 +77,14 @@ inputs = dict(inputs)
 # Output
 print("Inputs:")
 for key in iter(inputs):
-	perDay = inputs[key]/(12*daysPerMonth)
+	perDay = inputs[key]/(timeframe*daysPerMonth)
 	print(key + ": " + str(inputs[key]) + " (" + str(perDay) + ")")
 
 print()
 
 print("Outputs:")
 for key in iter(outputs):
-	perDay = outputs[key]/(12*daysPerMonth)
+	perDay = outputs[key]/(timeframe*daysPerMonth)
 	print(key + ": " + str(outputs[key]) + " (" + str(perDay) + ")")
 
 input("Press Enter to finish")
