@@ -1,0 +1,2923 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<!-- For Modders: Start your animal xml like this to avoid overriding.
+<animals doNotOverrideAnimals="true">
+-->
+<animals>
+    <animal type="COW" statsBreeding="breedCowsCount" clusterClass="AnimalCluster">
+        <configFilename>animals/domesticated/cow/husbandryAnimalsCow.xml</configFilename>
+		<subType subType="COW_SWISS_BROWN" fillTypeName="COW_SWISS_BROWN" malePart="BULL_SWISS_BROWN">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalCowSwissGrowthStage0" image="animals/domesticated/cow/store_calfSwiss.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionCowMilk</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_cowGrowthStage0</description>
+                    <textureIndexes>
+                        <value>5</value>
+                        <value>6</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="2" name="$l10n_shopItem_animalCowSwissGrowthStage1" image="animals/domesticated/cow/store_heiferSwiss.png" canBeBought="false" >
+                    <description>$l10n_animal_descriptionCowMilk</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_cowGrowthStage1</description>
+                    <textureIndexes>
+                        <value>5</value>
+                        <value>6</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="2" name="$l10n_shopItem_animalCowSwissGrowthStage1" image="animals/domesticated/cow/store_heiferSwiss.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionCowMilk</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_cowGrowthStage1</description>
+                    <textureIndexes>
+                        <value>5</value>
+                        <value>6</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="22" visualAnimalIndex="3" name="$l10n_shopItem_animalCowSwissGrowthStage2" image="$dataS/character/animals/domesticated/cow/store_cowSwissBrown.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionCowMilk</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_cowGrowthStage2</description>
+                    <textureIndexes>
+                        <value>3</value>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="12" durationMonth="10" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="200" />
+                <key ageMonth="24" value="2000" />
+                <key ageMonth="36" value="2000" />
+                <key ageMonth="60" value="1500" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="150" />
+                <key ageMonth="24" value="2000" />
+                <key ageMonth="36" value="2000" />
+                <key ageMonth="60" value="1000" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="50" />
+                <key ageMonth="12" value="80" />
+                <key ageMonth="18" value="100" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="200" />
+                    <key ageMonth="18" 	value="500" />
+                    <key ageMonth="22" 	value="712" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="200" />
+                    <key ageMonth="6"  value="300" />
+                    <key ageMonth="12" value="400" />
+                    <key ageMonth="18" value="500" />
+                    <key ageMonth="26" value="600" />
+                    <key ageMonth="27" value="700" />
+                    <key ageMonth="28" value="800" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="200" />
+                    <key ageMonth="6" 	value="400" />
+                    <key ageMonth="12" 	value="500" />
+                    <key ageMonth="18" 	value="900" />
+                    <key ageMonth="22" 	value="1000" />
+                    <key ageMonth="27" 	value="1400" />
+                    <key ageMonth="28" 	value="1400" />
+                </food>
+            </input>
+            <output>
+                <milk><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="0" />
+                    <key ageMonth="12" 	value="0" />
+                    <key ageMonth="17" 	value="0" />
+                    <key ageMonth="19" 	value="0" />
+                    <key ageMonth="20" 	value="0" />
+                    <key ageMonth="22" 	value="800" />
+                    <key ageMonth="23" 	value="900" />
+                    <key ageMonth="24" 	value="1200" />
+                    <key ageMonth="26" 	value="1200" />
+                    <key ageMonth="40" 	value="1000" />
+                    <key ageMonth="45" 	value="900" />
+                </milk>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="500" />
+                    <key ageMonth="18" 	value="1000" />
+                </manure>
+                <liquidManure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="400" />
+                    <key ageMonth="18" 	value="1300" />
+                </liquidManure>
+            </output>
+        </subType>
+		
+		<subType subType="BULL_SWISS_BROWN" fillTypeName="BULL_SWISS_BROWN">
+            <visuals>
+			    <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalBullSwissGrowthStage0" image="animals/domesticated/cow/store_calfSwiss.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionBullFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_bullGrowthStage0</description>
+                    <textureIndexes>
+                        <value>5</value>
+                        <value>6</value>
+                    </textureIndexes>
+                </visual>
+				<visual minAge="8" visualAnimalIndex="4" name="$l10n_shopItem_animalBullSwissGrowthStage1" image="animals/domesticated/cow/store_bullSwiss.png" canBeBought="false" >
+                    <description>$l10n_animal_descriptionBullFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_bullGrowthStage1</description>
+                    <textureIndexes>
+                        <value>5</value>
+                        <value>6</value>
+                    </textureIndexes>
+                </visual>
+				<visual minAge="12" visualAnimalIndex="4" name="$l10n_shopItem_animalBullSwissGrowthStage1" image="animals/domesticated/cow/store_bullSwiss.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionBullFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_bullGrowthStage1</description>
+                    <textureIndexes>
+                        <value>5</value>
+                        <value>6</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="100" />
+                <key ageMonth="24" value="1500" />
+                <key ageMonth="60" value="1400" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="24" value="1200" />
+                <key ageMonth="60" value="1100" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="50" />
+                <key ageMonth="24" value="80" />
+                <key ageMonth="60" value="100" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="200" />
+                    <key ageMonth="18" 	value="500" />
+                    <key ageMonth="22" 	value="712" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="200" />
+                    <key ageMonth="6"  value="300" />
+                    <key ageMonth="12" value="400" />
+                    <key ageMonth="18" value="500" />
+                    <key ageMonth="26" value="600" />
+                    <key ageMonth="27" value="700" />
+                    <key ageMonth="28" value="800" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="350" />
+                    <key ageMonth="6" 	value="600" />
+                    <key ageMonth="12" 	value="900" />
+                    <key ageMonth="18" 	value="1300" />
+                    <key ageMonth="22" 	value="1500" />
+                    <key ageMonth="27" 	value="1900" />
+                    <key ageMonth="28" 	value="2100" />
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="500" />
+                    <key ageMonth="18" 	value="1200" />
+                </manure>
+                <liquidManure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="400" />
+                    <key ageMonth="18" 	value="1500" />
+                </liquidManure>
+            </output>
+        </subType>
+		
+        <subType subType="COW_HOLSTEIN" fillTypeName="COW_HOLSTEIN" malePart="BULL_HOLSTEIN">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalCowHolsteinGrowthStage0" image="animals/domesticated/cow/store_calfHolstein.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionCowMilk</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_cowGrowthStage0</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="2" name="$l10n_shopItem_animalCowHolsteinGrowthStage1" image="animals/domesticated/cow/store_heiferHolstein.png" canBeBought="false" >
+                    <description>$l10n_animal_descriptionCowMilk</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_cowGrowthStage1</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="2" name="$l10n_shopItem_animalCowHolsteinGrowthStage1" image="animals/domesticated/cow/store_heiferHolstein.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionCowMilk</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_cowGrowthStage1</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="22" visualAnimalIndex="3" name="$l10n_shopItem_animalCowHolsteinGrowthStage2" image="$dataS/character/animals/domesticated/cow/store_cowHolstein.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionCowMilk</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_cowGrowthStage2</description>
+                    <textureIndexes>
+                        <value>1</value>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="12" durationMonth="10" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="200" />
+                <key ageMonth="24" value="2000" />
+                <key ageMonth="36" value="2000" />
+                <key ageMonth="60" value="1500" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="150" />
+                <key ageMonth="24" value="2000" />
+                <key ageMonth="36" value="2000" />
+                <key ageMonth="60" value="1000" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="50" />
+                <key ageMonth="12" value="80" />
+                <key ageMonth="18" value="100" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="200" />
+                    <key ageMonth="18" 	value="500" />
+                    <key ageMonth="22" 	value="712" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="200" />
+                    <key ageMonth="6"  value="300" />
+                    <key ageMonth="12" value="400" />
+                    <key ageMonth="18" value="500" />
+                    <key ageMonth="26" value="600" />
+                    <key ageMonth="27" value="700" />
+                    <key ageMonth="28" value="800" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="200" />
+                    <key ageMonth="6" 	value="400" />
+                    <key ageMonth="12" 	value="600" />
+                    <key ageMonth="18" 	value="1000" />
+                    <key ageMonth="22" 	value="1200" />
+                    <key ageMonth="27" 	value="1600" />
+                    <key ageMonth="28" 	value="1600" />
+                </food>
+            </input>
+            <output>
+                <milk><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="0" />
+                    <key ageMonth="12" 	value="0" />
+                    <key ageMonth="17" 	value="0" />
+                    <key ageMonth="19" 	value="0" />
+                    <key ageMonth="20" 	value="0" />
+                    <key ageMonth="22" 	value="1300" />
+                    <key ageMonth="23" 	value="1300" />
+                    <key ageMonth="24" 	value="1600" />
+                    <key ageMonth="26" 	value="1600" />
+                    <key ageMonth="40" 	value="1300" />
+                    <key ageMonth="45" 	value="1200" />
+                </milk>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="500" />
+                    <key ageMonth="18" 	value="1000" />
+                </manure>
+                <liquidManure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="400" />
+                    <key ageMonth="18" 	value="1300" />
+                </liquidManure>
+            </output>
+        </subType>
+
+        <subType subType="BULL_HOLSTEIN" fillTypeName="BULL_HOLSTEIN">
+            <visuals>
+			    <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalBullHolsteinGrowthStage0" image="animals/domesticated/cow/store_calfHolstein.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionBullFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_bullGrowthStage0</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+				<visual minAge="8" visualAnimalIndex="4" name="$l10n_shopItem_animalBullHolsteinGrowthStage1" image="animals/domesticated/cow/store_bullHolstein.png" canBeBought="false" >
+                    <description>$l10n_animal_descriptionBullFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_bullGrowthStage1</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+				<visual minAge="12" visualAnimalIndex="4" name="$l10n_shopItem_animalBullHolsteinGrowthStage1" image="animals/domesticated/cow/store_bullHolstein.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionBullFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_bullGrowthStage1</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="100" />
+                <key ageMonth="24" value="1500" />
+                <key ageMonth="60" value="1400" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="24" value="1200" />
+                <key ageMonth="60" value="1100" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="50" />
+                <key ageMonth="24" value="80" />
+                <key ageMonth="60" value="100" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="200" />
+                    <key ageMonth="18" 	value="500" />
+                    <key ageMonth="22" 	value="712" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="200" />
+                    <key ageMonth="6"  value="300" />
+                    <key ageMonth="12" value="400" />
+                    <key ageMonth="18" value="500" />
+                    <key ageMonth="26" value="600" />
+                    <key ageMonth="27" value="700" />
+                    <key ageMonth="28" value="800" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="350" />
+                    <key ageMonth="6" 	value="600" />
+                    <key ageMonth="12" 	value="900" />
+                    <key ageMonth="18" 	value="1300" />
+                    <key ageMonth="22" 	value="1500" />
+                    <key ageMonth="27" 	value="1900" />
+                    <key ageMonth="28" 	value="2100" />
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="500" />
+                    <key ageMonth="18" 	value="1200" />
+                </manure>
+                <liquidManure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="400" />
+                    <key ageMonth="18" 	value="1500" />
+                </liquidManure>
+            </output>
+        </subType>
+
+        <subType subType="COW_ANGUS" fillTypeName="COW_ANGUS" malePart="BULL_ANGUS">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalCowAngusGrowthStage0" image="animals/domesticated/cow/store_calfAngus.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionCowProfit</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cowGrowthStage0</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="2" name="$l10n_shopItem_animalCowAngusGrowthStage1" image="animals/domesticated/cow/store_heiferAngus.png" canBeBought="false" >
+                    <description>$l10n_animal_descriptionCowProfit</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cowGrowthStage1</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="2" name="$l10n_shopItem_animalCowAngusGrowthStage1" image="animals/domesticated/cow/store_heiferAngus.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionCowProfit</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cowGrowthStage1</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="22" visualAnimalIndex="5" name="$l10n_shopItem_animalCowAngusGrowthStage2" image="$dataS/character/animals/domesticated/cow/store_cowAngus.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionCowProfit</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cowGrowthStage2</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="18" durationMonth="10" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="100" />
+                <key ageMonth="24" value="1500" />
+                <key ageMonth="60" value="1400" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="24" value="1200" />
+                <key ageMonth="60" value="1100" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="50" />
+                <key ageMonth="12" value="80" />
+                <key ageMonth="18" value="100" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="200" />
+                    <key ageMonth="18" 	value="500" />
+                    <key ageMonth="22" 	value="712" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="200" />
+                    <key ageMonth="6"  value="300" />
+                    <key ageMonth="12" value="400" />
+                    <key ageMonth="18" value="500" />
+                    <key ageMonth="26" value="600" />
+                    <key ageMonth="27" value="700" />
+                    <key ageMonth="28" value="800" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="200" />
+                    <key ageMonth="6" 	value="300" />
+                    <key ageMonth="12" 	value="500" />
+                    <key ageMonth="18" 	value="900" />
+                    <key ageMonth="22" 	value="1100" />
+                    <key ageMonth="27" 	value="1500" />
+                    <key ageMonth="28" 	value="1500" />
+                </food>
+            </input>
+            <output>
+                <milk><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="0" />
+                    <key ageMonth="12" 	value="0" />
+                    <key ageMonth="17" 	value="0" />
+                    <key ageMonth="19" 	value="0" />
+                    <key ageMonth="20" 	value="0" />
+                    <key ageMonth="22" 	value="800" />
+                    <key ageMonth="23" 	value="800" />
+                    <key ageMonth="24" 	value="900" />
+                    <key ageMonth="26" 	value="1000" />
+                    <key ageMonth="40" 	value="900" />
+                    <key ageMonth="45" 	value="800" />
+                </milk>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="500" />
+                    <key ageMonth="18" 	value="1000" />
+                </manure>
+                <liquidManure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="400" />
+                    <key ageMonth="18" 	value="1300" />
+                </liquidManure>
+            </output>
+        </subType>
+		
+		<subType subType="BULL_ANGUS" fillTypeName="BULL_ANGUS" >
+            <visuals>
+			    <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalBullAngusGrowthStage0" image="animals/domesticated/cow/store_calfAngus.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionBullFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_bullGrowthStage0</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+				<visual minAge="8" visualAnimalIndex="4" name="$l10n_shopItem_animalBullAngusGrowthStage1" image="animals/domesticated/cow/store_bullAngus.png" canBeBought="false" >
+                    <description>$l10n_animal_descriptionBullFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_bullGrowthStage1</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+				<visual minAge="12" visualAnimalIndex="4" name="$l10n_shopItem_animalBullAngusGrowthStage1" image="animals/domesticated/cow/store_bullAngus.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionBullFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_bullGrowthStage1</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="300" />
+                <key ageMonth="24" value="3000" />
+                <key ageMonth="60" value="2000" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="230" />
+                <key ageMonth="24" value="2800" />
+                <key ageMonth="60" value="1800" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="50" />
+                <key ageMonth="24" value="80" />
+                <key ageMonth="60" value="100" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="200" />
+                    <key ageMonth="18" 	value="500" />
+                    <key ageMonth="22" 	value="712" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="200" />
+                    <key ageMonth="6"  value="300" />
+                    <key ageMonth="12" value="400" />
+                    <key ageMonth="18" value="500" />
+                    <key ageMonth="26" value="600" />
+                    <key ageMonth="27" value="700" />
+                    <key ageMonth="28" value="800" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="350" />
+                    <key ageMonth="6" 	value="600" />
+                    <key ageMonth="12" 	value="900" />
+                    <key ageMonth="18" 	value="1300" />
+                    <key ageMonth="22" 	value="1500" />
+                    <key ageMonth="27" 	value="1900" />
+                    <key ageMonth="28" 	value="2100" />
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="500" />
+                    <key ageMonth="18" 	value="1300" />
+                </manure>
+                <liquidManure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="400" />
+                    <key ageMonth="18" 	value="1600" />
+                </liquidManure>
+            </output>
+        </subType>
+
+        <subType subType="COW_LIMOUSIN" fillTypeName="COW_LIMOUSIN" malePart="BULL_LIMOUSIN">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalCowLimousinGrowthStage0" image="animals/domesticated/cow/store_calfLimousin.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionCowProfit</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cowGrowthStage0</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="2" name="$l10n_shopItem_animalCowLimousinGrowthStage1" image="animals/domesticated/cow/store_heiferLimousin.png" canBeBought="false" >
+                    <description>$l10n_animal_descriptionCowProfit</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cowGrowthStage1</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="2" name="$l10n_shopItem_animalCowLimousinGrowthStage1" image="animals/domesticated/cow/store_heiferLimousin.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionCowProfit</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cowGrowthStage1</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="22" visualAnimalIndex="5" name="$l10n_shopItem_animalCowLimousinGrowthStage2" image="$dataS/character/animals/domesticated/cow/store_cowLimousin.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionCowProfit</description>
+                    <description>$l10n_animal_descriptionCowFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cowGrowthStage2</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="18" durationMonth="10" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="100" />
+                <key ageMonth="24" value="1500" />
+                <key ageMonth="60" value="1400" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="24" value="1200" />
+                <key ageMonth="60" value="1100" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="50" />
+                <key ageMonth="12" value="80" />
+                <key ageMonth="18" value="100" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="200" />
+                    <key ageMonth="18" 	value="500" />
+                    <key ageMonth="22" 	value="712" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="200" />
+                    <key ageMonth="6"  value="300" />
+                    <key ageMonth="12" value="400" />
+                    <key ageMonth="18" value="500" />
+                    <key ageMonth="26" value="600" />
+                    <key ageMonth="27" value="700" />
+                    <key ageMonth="28" value="800" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="200" />
+                    <key ageMonth="6" 	value="300" />
+                    <key ageMonth="12" 	value="500" />
+                    <key ageMonth="18" 	value="900" />
+                    <key ageMonth="22" 	value="1100" />
+                    <key ageMonth="27" 	value="1500" />
+                    <key ageMonth="28" 	value="1500" />
+                </food>
+            </input>
+            <output>
+                <milk><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="0" />
+                    <key ageMonth="12" 	value="0" />
+                    <key ageMonth="17" 	value="0" />
+                    <key ageMonth="19" 	value="0" />
+                    <key ageMonth="20" 	value="0" />
+                    <key ageMonth="22" 	value="800" />
+                    <key ageMonth="23" 	value="800" />
+                    <key ageMonth="24" 	value="900" />
+                    <key ageMonth="26" 	value="1000" />
+                    <key ageMonth="40" 	value="900" />
+                    <key ageMonth="45" 	value="800" />
+                </milk>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="500" />
+                    <key ageMonth="18" 	value="1000" />
+                </manure>
+                <liquidManure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="400" />
+                    <key ageMonth="18" 	value="1300" />
+                </liquidManure>
+            </output>
+        </subType>
+		
+		<subType subType="BULL_LIMOUSIN" fillTypeName="BULL_LIMOUSIN" >
+            <visuals>
+			    <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalBullLimousinGrowthStage0" image="animals/domesticated/cow/store_calfLimousin.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionBullFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_bullGrowthStage0</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+				<visual minAge="8" visualAnimalIndex="4" name="$l10n_shopItem_animalBullLimousinGrowthStage1" image="animals/domesticated/cow/store_bullLimousin.png" canBeBought="false" >
+                    <description>$l10n_animal_descriptionBullFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_bullGrowthStage1</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+				<visual minAge="12" visualAnimalIndex="4" name="$l10n_shopItem_animalBullLimousinGrowthStage1" image="animals/domesticated/cow/store_bullLimousin.png" canBeBought="true" >
+                    <description>$l10n_animal_descriptionBullFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_bullGrowthStage1</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="300" />
+                <key ageMonth="24" value="3000" />
+                <key ageMonth="60" value="2000" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="230" />
+                <key ageMonth="24" value="2800" />
+                <key ageMonth="60" value="1800" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="50" />
+                <key ageMonth="24" value="80" />
+                <key ageMonth="60" value="100" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="200" />
+                    <key ageMonth="18" 	value="500" />
+                    <key ageMonth="22" 	value="712" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="200" />
+                    <key ageMonth="6"  value="300" />
+                    <key ageMonth="12" value="400" />
+                    <key ageMonth="18" value="500" />
+                    <key ageMonth="26" value="600" />
+                    <key ageMonth="27" value="700" />
+                    <key ageMonth="28" value="800" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" 	value="350" />
+                    <key ageMonth="6" 	value="600" />
+                    <key ageMonth="12" 	value="900" />
+                    <key ageMonth="18" 	value="1300" />
+                    <key ageMonth="22" 	value="1500" />
+                    <key ageMonth="27" 	value="1900" />
+                    <key ageMonth="28" 	value="2100" />
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="500" />
+                    <key ageMonth="18" 	value="1300" />
+                </manure>
+                <liquidManure><!-- liters per month based on age -->
+                    <key ageMonth="0"  	value="400" />
+                    <key ageMonth="18" 	value="1600" />
+                </liquidManure>
+            </output>
+        </subType>
+    </animal>
+
+    <animal type="PIG" statsBreeding="breedPigsCount" clusterClass="AnimalCluster">
+        <configFilename>animals/domesticated/pig/husbandryAnimalsPig.xml</configFilename>
+
+        <subType subType="PIG_LANDRACE" fillTypeName="PIG_LANDRACE" malePart="BOAR_LANDRACE">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalPiglet_landrace" image="animals/domesticated/pig/store_piglet_landrace.png" canBeBought="true">
+                    <description>$l10n_animal_pigletDescription</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="3" visualAnimalIndex="2" name="$l10n_shopItem_animalPigFattening_landrace" image="animals/domesticated/pig/store_pigFattening_landrace.png" canBeBought="true">
+                    <description>$l10n_animal_pigFatteningDescription</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="3" name="$l10n_shopItem_animalPigSow_landrace" image="$dataS/character/animals/domesticated/pig/store_pigLandrace.png" canBeBought="true">
+                    <description>$l10n_animal_pigSowDescription</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="6" durationMonth="4" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="20"/>
+                <key ageMonth="24" value="1200"/>
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="10"/>
+                <key ageMonth="24" value="700"/>
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="5" />
+                <key ageMonth="3" value="10" />
+                <key ageMonth="6" value="20" />
+                <key ageMonth="24" value="20" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="15"/>
+                    <key ageMonth="6" value="60"/>
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="2"/>
+                    <key ageMonth="6" value="15"/>
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="25"/>
+                    <key ageMonth="6" value="120"/>
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="25"/>
+                    <key ageMonth="6" value="75"/>
+                </manure>
+                <liquidManure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30"/>
+                    <key ageMonth="6" value="100"/>
+                </liquidManure>
+            </output>
+        </subType>
+        <subType subType="BOAR_LANDRACE" fillTypeName="BOAR_LANDRACE" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalBoarPiglet_landrace" image="animals/domesticated/pig/store_piglet_landrace.png" canBeBought="true">
+                    <description>$l10n_animal_pigletDescription</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="3" visualAnimalIndex="4" name="$l10n_shopItem_animalBoarFattening_landrace" image="animals/domesticated/pig/store_pigFattening_landrace.png" canBeBought="true">
+                    <description>$l10n_animal_boarFatteningDescription</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="5" name="$l10n_shopItem_animalBoar_landrace" image="animals/domesticated/pig/boar/store_boar_landrace.png" canBeBought="true">
+                    <description>$l10n_animal_pigBoarDescription</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="30"/>
+                <key ageMonth="24" value="1400"/>
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="15"/>
+                <key ageMonth="24" value="800"/>
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="5" />
+                <key ageMonth="3" value="10" />
+                <key ageMonth="6" value="20" />
+                <key ageMonth="24" value="20" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="20"/>
+                    <key ageMonth="6" value="65"/>
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="2"/>
+                    <key ageMonth="6" value="15"/>
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30"/>
+                    <key ageMonth="6" value="140"/>
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30"/>
+                    <key ageMonth="6" value="80"/>
+                </manure>
+                <liquidManure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="35"/>
+                    <key ageMonth="6" value="120"/>
+                </liquidManure>
+            </output>
+        </subType>
+        <subType subType="PIG_BERKSHIRE" fillTypeName="PIG_BERKSHIRE" malePart="BOAR_BERKSHIRE">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalPiglet_berkshire" image="animals/domesticated/pig/store_piglet_berkshire.png" canBeBought="true">
+                    <description>$l10n_animal_pigletDescription</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="3" visualAnimalIndex="2" name="$l10n_shopItem_animalPigFattening_berkshire" image="animals/domesticated/pig/store_pigFattening_berkshire.png" canBeBought="true">
+                    <description>$l10n_animal_pigFatteningDescription</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="3" name="$l10n_shopItem_animalPigSow_berkshire" image="$dataS/character/animals/domesticated/pig/store_pigBerkshire.png" canBeBought="true">
+                    <description>$l10n_animal_pigSowDescription</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="6" durationMonth="4" minHealthFactor="0.75"/>
+            <buyPrice>
+                <key ageMonth="0" value="20"/>
+                <key ageMonth="24" value="1200"/>
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="10"/>
+                <key ageMonth="24" value="700"/>
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="5" />
+                <key ageMonth="3" value="10" />
+                <key ageMonth="6" value="20" />
+                <key ageMonth="24" value="20" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="15"/>
+                    <key ageMonth="6" value="60"/>
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="2"/>
+                    <key ageMonth="6" value="15"/>
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="25"/>
+                    <key ageMonth="6" value="120"/>
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="25"/>
+                    <key ageMonth="6" value="75"/>
+                </manure>
+                <liquidManure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30"/>
+                    <key ageMonth="6" value="100"/>
+                </liquidManure>
+            </output>
+        </subType>
+        <subType subType="BOAR_BERKSHIRE" fillTypeName="BOAR_BERKSHIRE" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalBoarPiglet_berkshire" image="animals/domesticated/pig/store_piglet_berkshire.png" canBeBought="true">
+                    <description>$l10n_animal_pigletDescription</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="3" visualAnimalIndex="4" name="$l10n_shopItem_animalBoarFattening_berkshire" image="animals/domesticated/pig/store_pigFattening_berkshire.png" canBeBought="true">
+                    <description>$l10n_animal_boarFatteningDescription</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="5" name="$l10n_shopItem_animalBoar_berkshire" image="animals/domesticated/pig/boar/store_boar_berkshire.png" canBeBought="true">
+                    <description>$l10n_animal_pigBoarDescription</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="30"/>
+                <key ageMonth="24" value="1400"/>
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="15"/>
+                <key ageMonth="24" value="800"/>
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="5" />
+                <key ageMonth="3" value="10" />
+                <key ageMonth="6" value="20" />
+                <key ageMonth="24" value="20" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="20"/>
+                    <key ageMonth="6" value="65"/>
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="2"/>
+                    <key ageMonth="6" value="15"/>
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30"/>
+                    <key ageMonth="6" value="140"/>
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30"/>
+                    <key ageMonth="6" value="80"/>
+                </manure>
+                <liquidManure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="35"/>
+                    <key ageMonth="6" value="120"/>
+                </liquidManure>
+            </output>
+        </subType>
+        <subType subType="PIG_BLACK_PIED" fillTypeName="PIG_BLACK_PIED" malePart="BOAR_BLACK_PIED">
+            <visuals>
+
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalPiglet_blackPied" image="animals/domesticated/pig/store_piglet_blackPied.png" canBeBought="true">
+                    <description>$l10n_animal_pigletDescription</description>
+                    <textureIndexes>
+                        <value>3</value>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="3" visualAnimalIndex="2" name="$l10n_shopItem_animalBoarFattening_blackPied" image="animals/domesticated/pig/store_pigFattening_blackPied.png" canBeBought="true">
+                    <description>$l10n_animal_pigFatteningDescription</description>
+                    <textureIndexes>
+                        <value>3</value>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="3" name="$l10n_shopItem_animalPigSow_blackPied" image="$dataS/character/animals/domesticated/pig/store_pigBlackPied.png" canBeBought="true">
+                    <description>$l10n_animal_pigSowDescription</description>
+                    <textureIndexes>
+                        <value>3</value>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="6" durationMonth="4" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="20"/>
+                <key ageMonth="24" value="1200"/>
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="10"/>
+                <key ageMonth="24" value="700"/>
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="5" />
+                <key ageMonth="3" value="10" />
+                <key ageMonth="6" value="20" />
+                <key ageMonth="24" value="20" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="15"/>
+                    <key ageMonth="6" value="60"/>
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="2"/>
+                    <key ageMonth="6" value="15"/>
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="25"/>
+                    <key ageMonth="6" value="120"/>
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="25"/>
+                    <key ageMonth="6" value="75"/>
+                </manure>
+                <liquidManure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30"/>
+                    <key ageMonth="6" value="100"/>
+                </liquidManure>
+            </output>
+        </subType>
+        <subType subType="BOAR_BLACK_PIED" fillTypeName="BOAR_BLACK_PIED" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalBoarPiglet_blackPied" image="animals/domesticated/pig/store_piglet_blackPied.png" canBeBought="true">
+                    <description>$l10n_animal_pigletDescription</description>
+                    <textureIndexes>
+                        <value>3</value>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="3" visualAnimalIndex="4" name="$l10n_shopItem_animalBoarFattening_blackPied" image="animals/domesticated/pig/store_pigFattening_blackPied.png" canBeBought="true">
+                    <description>$l10n_animal_boarFatteningDescription</description>
+                    <textureIndexes>
+                        <value>3</value>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="5" name="$l10n_shopItem_animalBoar_blackPied" image="animals/domesticated/pig/boar/store_boar_blackPied.png" canBeBought="true">
+                    <description>$l10n_animal_pigBoarDescription</description>
+                    <textureIndexes>
+                        <value>3</value>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="30"/>
+                <key ageMonth="24" value="1400"/>
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="15"/>
+                <key ageMonth="24" value="800"/>
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="5" />
+                <key ageMonth="3" value="10" />
+                <key ageMonth="6" value="20" />
+                <key ageMonth="24" value="20" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="20"/>
+                    <key ageMonth="6" value="65"/>
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="2"/>
+                    <key ageMonth="6" value="15"/>
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30"/>
+                    <key ageMonth="6" value="140"/>
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30"/>
+                    <key ageMonth="6" value="80"/>
+                </manure>
+                <liquidManure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="35"/>
+                    <key ageMonth="6" value="120"/>
+                </liquidManure>
+            </output>
+        </subType>
+    </animal>
+
+    <animal type="SHEEP" statsBreeding="breedSheepCount" clusterClass="AnimalCluster">
+        <configFilename>animals/domesticated/sheep/husbandryAnimalsSheep.xml</configFilename>
+
+        <subType subType="SHEEP_LANDRACE" fillTypeName="SHEEP_LANDRACE" malePart="SHEEP_RAM_LANDRACE">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalSheepLandraceGrowthStage0" image="animals/domesticated/sheep/store_lambLandrace.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionSheepFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_sheepGrowthStage0Description</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="2" name="$l10n_shopItem_animalSheepLandraceGrowthStage1" image="$dataS/character/animals/domesticated/sheep/store_sheepLandrace.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionSheepProfit</description>
+                    <description>$l10n_animal_descriptionSheepFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_sheepGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="2" name="$l10n_shopItem_animalSheepLandraceGrowthStage1" image="$dataS/character/animals/domesticated/sheep/store_sheepLandrace.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionSheepProfit</description>
+                    <description>$l10n_animal_descriptionSheepFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_sheepGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="8" durationMonth="5" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="100" />
+                <key ageMonth="36" value="300" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="100" />
+                <key ageMonth="36" value="300" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="30" />
+                <key ageMonth="8" value="50" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="5" value="15" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="25" />
+                    <key ageMonth="5" value="150" />
+                </food>
+            </input>
+            <output>
+                <pallets><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="0" />
+                    <key ageMonth="1"  value="0" />
+                    <key ageMonth="2"  value="0" />
+                    <key ageMonth="3"  value="0" />
+                    <key ageMonth="4"  value="0" />
+                    <key ageMonth="5"  value="0" />
+                    <key ageMonth="6"  value="0" />
+                    <key ageMonth="7"  value="0" />
+                    <key ageMonth="8"  value="10" />
+                    <key ageMonth="18" value="42" />
+                </pallets>
+            </output>
+        </subType>
+
+        <subType subType="SHEEP_RAM_LANDRACE" fillTypeName="SHEEP_RAM_LANDRACE" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalRamLandraceGrowthStage0" image="animals/domesticated/sheep/store_lambLandrace.png" canBeBought="true">
+                    <description>$l10n_animal_ramDescription</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="3" name="$l10n_shopItem_animalRamLandraceGrowthStage1" image="animals/domesticated/sheep/store_ramLandrace.png" canBeBought="false">
+                    <description>$l10n_animal_ramDescription</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="3" name="$l10n_shopItem_animalRamLandraceGrowthStage1" image="animals/domesticated/sheep/store_ramLandrace.png" canBeBought="true">
+                    <description>$l10n_animal_ramDescription</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="150" />
+                <key ageMonth="12" value="400" />
+                <key ageMonth="36" value="200" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="150" />
+                <key ageMonth="12" value="400" />
+                <key ageMonth="36" value="200" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="30" />
+                <key ageMonth="12" value="60" />
+                <key ageMonth="36" value="60" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="5" value="20" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="5" value="160" />
+                </food>
+            </input>
+            <output>
+                <pallets><!-- liters per month based on age -->
+                    <key ageMonth="12" value="42" />
+                    <key ageMonth="36" value="42" />
+                </pallets>
+            </output>
+        </subType>
+		
+        <subType subType="SHEEP_STEINSCHAF" fillTypeName="SHEEP_STEINSCHAF" malePart="SHEEP_RAM_STEINSCHAF">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalSheepSteinschafGrowthStage0" image="animals/domesticated/sheep/store_lambSteinschaf.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionSheepFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_sheepGrowthStage0Description</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="2" name="$l10n_shopItem_animalSheepSteinschafGrowthStage1" image="$dataS/character/animals/domesticated/sheep/store_sheepSteinschaf.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionSheepProfit</description>
+                    <description>$l10n_animal_descriptionSheepFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_sheepGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="2" name="$l10n_shopItem_animalSheepSteinschafGrowthStage1" image="$dataS/character/animals/domesticated/sheep/store_sheepSteinschaf.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionSheepProfit</description>
+                    <description>$l10n_animal_descriptionSheepFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_sheepGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="8" durationMonth="5" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="100" />
+                <key ageMonth="36" value="300" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="100" />
+                <key ageMonth="36" value="300" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="30" />
+                <key ageMonth="8" value="50" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="5" value="15" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="25" />
+                    <key ageMonth="5" value="150" />
+                </food>
+            </input>
+            <output>
+                <pallets><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="0" />
+                    <key ageMonth="1"  value="0" />
+                    <key ageMonth="2"  value="0" />
+                    <key ageMonth="3"  value="0" />
+                    <key ageMonth="4"  value="0" />
+                    <key ageMonth="5"  value="0" />
+                    <key ageMonth="6"  value="0" />
+                    <key ageMonth="7"  value="0" />
+                    <key ageMonth="8"  value="10" />
+                    <key ageMonth="18" value="42" />
+                </pallets>
+            </output>
+        </subType>
+		
+        <subType subType="SHEEP_RAM_STEINSCHAF" fillTypeName="SHEEP_RAM_STEINSCHAF" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalRamSteinschafGrowthStage0" image="animals/domesticated/sheep/store_lambSteinschaf.png" canBeBought="true">
+                    <description>$l10n_animal_ramDescription</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="3" name="$l10n_shopItem_animalRamSteinschafGrowthStage1" image="animals/domesticated/sheep/store_ramSteinschaf.png" canBeBought="false">
+                    <description>$l10n_animal_ramDescription</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="3" name="$l10n_shopItem_animalRamSteinschafGrowthStage1" image="animals/domesticated/sheep/store_ramSteinschaf.png" canBeBought="true">
+                    <description>$l10n_animal_ramDescription</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="150" />
+                <key ageMonth="12" value="400" />
+                <key ageMonth="36" value="200" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="150" />
+                <key ageMonth="12" value="400" />
+                <key ageMonth="36" value="200" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="30" />
+                <key ageMonth="12" value="60" />
+                <key ageMonth="36" value="60" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="5" value="20" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="5" value="160" />
+                </food>
+            </input>
+            <output>
+                <pallets><!-- liters per month based on age -->
+                    <key ageMonth="12" value="42" />
+                    <key ageMonth="36" value="42" />
+                </pallets>
+            </output>
+        </subType>
+		
+        <subType subType="SHEEP_SWISS_MOUNTAIN" fillTypeName="SHEEP_SWISS_MOUNTAIN" malePart="SHEEP_RAM_MOUNTAIN">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalSheepMountainGrowthStage0" image="animals/domesticated/sheep/store_lambMountain.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionSheepFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_sheepGrowthStage0Description</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="2" name="$l10n_shopItem_animalSheepMountainGrowthStage1" image="$dataS/character/animals/domesticated/sheep/store_sheepSwissMountain.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionSheepProfit</description>
+                    <description>$l10n_animal_descriptionSheepFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_sheepGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="2" name="$l10n_shopItem_animalSheepMountainGrowthStage1" image="$dataS/character/animals/domesticated/sheep/store_sheepSwissMountain.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionSheepProfit</description>
+                    <description>$l10n_animal_descriptionSheepFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_sheepGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="8" durationMonth="5" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="100" />
+                <key ageMonth="36" value="300" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="100" />
+                <key ageMonth="36" value="300" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="30" />
+                <key ageMonth="8" value="50" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="5" value="15" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="25" />
+                    <key ageMonth="5" value="150" />
+                </food>
+            </input>
+            <output>
+                <pallets><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="0" />
+                    <key ageMonth="1"  value="0" />
+                    <key ageMonth="2"  value="0" />
+                    <key ageMonth="3"  value="0" />
+                    <key ageMonth="4"  value="0" />
+                    <key ageMonth="5"  value="0" />
+                    <key ageMonth="6"  value="0" />
+                    <key ageMonth="7"  value="0" />
+                    <key ageMonth="8"  value="10" />
+                    <key ageMonth="18" value="42" />
+                </pallets>
+            </output>
+        </subType>
+		
+        <subType subType="SHEEP_RAM_MOUNTAIN" fillTypeName="SHEEP_RAM_MOUNTAIN" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalRamMountainGrowthStage0" image="animals/domesticated/sheep/store_lambMountain.png" canBeBought="true">
+                    <description>$l10n_animal_ramDescription</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="3" name="$l10n_shopItem_animalRamMountainGrowthStage1" image="animals/domesticated/sheep/store_ramMountain.png" canBeBought="false">
+                    <description>$l10n_animal_ramDescription</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="3" name="$l10n_shopItem_animalRamMountainGrowthStage1" image="animals/domesticated/sheep/store_ramMountain.png" canBeBought="true">
+                    <description>$l10n_animal_ramDescription</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="150" />
+                <key ageMonth="12" value="400" />
+                <key ageMonth="36" value="200" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="150" />
+                <key ageMonth="12" value="400" />
+                <key ageMonth="36" value="200" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="30" />
+                <key ageMonth="12" value="60" />
+                <key ageMonth="36" value="60" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="5" value="20" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="5" value="160" />
+                </food>
+            </input>
+            <output>
+                <pallets><!-- liters per month based on age -->
+                    <key ageMonth="12" value="42" />
+                    <key ageMonth="36" value="42" />
+                </pallets>
+            </output>
+        </subType>
+		
+        <subType subType="SHEEP_BLACK_WELSH" fillTypeName="SHEEP_BLACK_WELSH" malePart="SHEEP_RAM_WELSH">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalSheepWelshGrowthStage0" image="animals/domesticated/sheep/store_lambWelsh.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionSheepFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_sheepGrowthStage0Description</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="2" name="$l10n_shopItem_animalSheepWelshGrowthStage1" image="$dataS/character/animals/domesticated/sheep/store_sheepBlackWelsh.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionSheepProfit</description>
+                    <description>$l10n_animal_descriptionSheepFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_sheepGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="2" name="$l10n_shopItem_animalSheepWelshGrowthStage1" image="$dataS/character/animals/domesticated/sheep/store_sheepBlackWelsh.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionSheepProfit</description>
+                    <description>$l10n_animal_descriptionSheepFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_sheepGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="8" durationMonth="5" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="100" />
+                <key ageMonth="36" value="300" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="100" />
+                <key ageMonth="36" value="300" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="30" />
+                <key ageMonth="8" value="50" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="5" value="15" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="25" />
+                    <key ageMonth="5" value="150" />
+                </food>
+            </input>
+            <output>
+                <pallets><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="0" />
+                    <key ageMonth="1"  value="0" />
+                    <key ageMonth="2"  value="0" />
+                    <key ageMonth="3"  value="0" />
+                    <key ageMonth="4"  value="0" />
+                    <key ageMonth="5"  value="0" />
+                    <key ageMonth="6"  value="0" />
+                    <key ageMonth="7"  value="0" />
+                    <key ageMonth="8"  value="10" />
+                    <key ageMonth="18" value="42" />
+                </pallets>
+            </output>
+        </subType>
+		
+        <subType subType="SHEEP_RAM_WELSH" fillTypeName="SHEEP_RAM_WELSH" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalRamWelshGrowthStage0" image="animals/domesticated/sheep/store_lambWelsh.png" canBeBought="true">
+                    <description>$l10n_animal_ramDescription</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="3" name="$l10n_shopItem_animalRamWelshGrowthStage1" image="animals/domesticated/sheep/store_ramWelsh.png" canBeBought="false">
+                    <description>$l10n_animal_ramDescription</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="3" name="$l10n_shopItem_animalRamWelshGrowthStage1" image="animals/domesticated/sheep/store_ramWelsh.png" canBeBought="true">
+                    <description>$l10n_animal_ramDescription</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="150" />
+                <key ageMonth="12" value="400" />
+                <key ageMonth="36" value="200" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="150" />
+                <key ageMonth="12" value="400" />
+                <key ageMonth="36" value="200" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="30" />
+                <key ageMonth="12" value="60" />
+                <key ageMonth="36" value="60" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="5" value="20" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="5" value="160" />
+                </food>
+            </input>
+            <output>
+                <pallets><!-- liters per month based on age -->
+                    <key ageMonth="12" value="42" />
+                    <key ageMonth="36" value="42" />
+                </pallets>
+            </output>
+        </subType>
+
+        <subType subType="GOAT_LANDRACE" fillTypeName="GOAT_LANDRACE" malePart="GOAT_MALE_LANDRACE">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="4" name="$l10n_shopItem_animalGoatLandraceGrowthStage0" image="animals/domesticated/sheep/store_goatlingLandrace.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_goatGrowthStage0Description</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="5" name="$l10n_shopItem_animalGoatLandraceGrowthStage1" image="animals/domesticated/sheep/store_goatLandraceFemale.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_goatGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="5" name="$l10n_shopItem_animalGoatLandraceGrowthStage1" image="animals/domesticated/sheep/store_goatLandraceFemale.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_goatGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="8" durationMonth="5" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="36" value="280" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="36" value="280" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="20" />
+                <key ageMonth="8" value="40" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="12" />
+                    <key ageMonth="5" value="50" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="25" />
+                    <key ageMonth="5" value="150" />
+                </food>
+            </input>
+            <output>
+                <milk><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="0" />
+                    <key ageMonth="1"  value="0" />
+                    <key ageMonth="2"  value="0" />
+                    <key ageMonth="3"  value="0" />
+                    <key ageMonth="4"  value="0" />
+                    <key ageMonth="5"  value="0" />
+                    <key ageMonth="6"  value="0" />
+                    <key ageMonth="7"  value="0" />
+                    <key ageMonth="8" value="35" />
+                    <key ageMonth="9" value="35" />
+                    <key ageMonth="10" value="35" />
+                    <key ageMonth="11" value="55" />
+                    <key ageMonth="12" value="55" />
+                    <key ageMonth="13" value="55" />
+                    <key ageMonth="14" value="75" />
+                    <key ageMonth="15" value="75" />
+                    <key ageMonth="16" value="75" />
+                </milk>
+            </output>
+        </subType>
+		
+        <subType subType="GOAT_MALE_LANDRACE" fillTypeName="GOAT_MALE_LANDRACE" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="4" name="$l10n_shopItem_animalGoatLandraceMaleGrowthStage0" image="animals/domesticated/sheep/store_goatlingLandrace.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_goatMaleGrowthStage0Description</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="6" name="$l10n_shopItem_animalGoatLandraceMale" image="animals/domesticated/sheep/store_goatLandraceMale.png" canBeBought="false">
+                <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_goatMaleDescription</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="6" name="$l10n_shopItem_animalGoatLandraceMale" image="animals/domesticated/sheep/store_goatLandraceMale.png" canBeBought="true">
+                <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_goatMaleDescription</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="12" value="300" />
+                <key ageMonth="36" value="100" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="12" value="300" />
+                <key ageMonth="36" value="100" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="20" />
+                <key ageMonth="12" value="50" />
+                <key ageMonth="36" value="50" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="12" />
+                    <key ageMonth="5" value="50" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="5" value="170" />
+                </food>
+            </input>
+            <output>
+            </output>
+        </subType>
+		
+        <subType subType="GOAT_STONEGOAT" fillTypeName="GOAT_STONEGOAT" malePart="GOAT_MALE_STONEGOAT">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="4" name="$l10n_shopItem_animalGoatStonegoatGrowthStage0" image="animals/domesticated/sheep/store_goatlingStonegoat.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_goatGrowthStage0Description</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="5" name="$l10n_shopItem_animalGoatStonegoatGrowthStage1" image="animals/domesticated/sheep/store_goatStonegoatFemale.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_goatGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="5" name="$l10n_shopItem_animalGoatStonegoatGrowthStage1" image="animals/domesticated/sheep/store_goatStonegoatFemale.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_goatGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="8" durationMonth="5" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="36" value="280" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="36" value="280" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="20" />
+                <key ageMonth="8" value="40" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="12" />
+                    <key ageMonth="5" value="50" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="25" />
+                    <key ageMonth="5" value="150" />
+                </food>
+            </input>
+            <output>
+                <milk><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="0" />
+                    <key ageMonth="1"  value="0" />
+                    <key ageMonth="2"  value="0" />
+                    <key ageMonth="3"  value="0" />
+                    <key ageMonth="4"  value="0" />
+                    <key ageMonth="5"  value="0" />
+                    <key ageMonth="6"  value="0" />
+                    <key ageMonth="7"  value="0" />
+                    <key ageMonth="8" value="35" />
+                    <key ageMonth="9" value="35" />
+                    <key ageMonth="10" value="35" />
+                    <key ageMonth="11" value="55" />
+                    <key ageMonth="12" value="55" />
+                    <key ageMonth="13" value="55" />
+                    <key ageMonth="14" value="75" />
+                    <key ageMonth="15" value="75" />
+                    <key ageMonth="16" value="75" />
+                </milk>
+            </output>
+        </subType>
+		
+        <subType subType="GOAT_MALE_STONEGOAT" fillTypeName="GOAT_MALE_STONEGOAT" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="4" name="$l10n_shopItem_animalGoatStonegoatMaleGrowthStage0" image="animals/domesticated/sheep/store_goatlingStonegoat.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_goatMaleGrowthStage0Description</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="6" name="$l10n_shopItem_animalGoatStonegoatMale" image="animals/domesticated/sheep/store_goatStonegoatMale.png" canBeBought="false">
+                <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_goatMaleDescription</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="6" name="$l10n_shopItem_animalGoatStonegoatMale" image="animals/domesticated/sheep/store_goatStonegoatMale.png" canBeBought="true">
+                <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_goatMaleDescription</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="12" value="300" />
+                <key ageMonth="36" value="100" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="12" value="300" />
+                <key ageMonth="36" value="100" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="20" />
+                <key ageMonth="12" value="50" />
+                <key ageMonth="36" value="50" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="12" />
+                    <key ageMonth="5" value="50" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="5" value="170" />
+                </food>
+            </input>
+            <output>
+            </output>
+        </subType>
+		
+        <subType subType="GOAT_MOUNTAIN" fillTypeName="GOAT_MOUNTAIN" malePart="GOAT_MALE_MOUNTAIN">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="4" name="$l10n_shopItem_animalGoatMountainGrowthStage0" image="animals/domesticated/sheep/store_goatlingMountain.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_goatGrowthStage0Description</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="5" name="$l10n_shopItem_animalGoatMountainGrowthStage1" image="animals/domesticated/sheep/store_goatMountainFemale.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_goatGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="5" name="$l10n_shopItem_animalGoatMountainGrowthStage1" image="animals/domesticated/sheep/store_goatMountainFemale.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_goatGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="8" durationMonth="5" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="36" value="280" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="36" value="280" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="20" />
+                <key ageMonth="8" value="40" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="12" />
+                    <key ageMonth="5" value="50" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="25" />
+                    <key ageMonth="5" value="150" />
+                </food>
+            </input>
+            <output>
+                <milk><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="0" />
+                    <key ageMonth="1"  value="0" />
+                    <key ageMonth="2"  value="0" />
+                    <key ageMonth="3"  value="0" />
+                    <key ageMonth="4"  value="0" />
+                    <key ageMonth="5"  value="0" />
+                    <key ageMonth="6"  value="0" />
+                    <key ageMonth="7"  value="0" />
+                    <key ageMonth="8" value="35" />
+                    <key ageMonth="9" value="35" />
+                    <key ageMonth="10" value="35" />
+                    <key ageMonth="11" value="55" />
+                    <key ageMonth="12" value="55" />
+                    <key ageMonth="13" value="55" />
+                    <key ageMonth="14" value="75" />
+                    <key ageMonth="15" value="75" />
+                    <key ageMonth="16" value="75" />
+                </milk>
+            </output>
+        </subType>
+		
+        <subType subType="GOAT_MALE_MOUNTAIN" fillTypeName="GOAT_MALE_MOUNTAIN" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="4" name="$l10n_shopItem_animalGoatMountainMaleGrowthStage0" image="animals/domesticated/sheep/store_goatlingMountain.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_goatMaleGrowthStage0Description</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="6" name="$l10n_shopItem_animalGoatMountainMale" image="animals/domesticated/sheep/store_goatMountainMale.png" canBeBought="false">
+                <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_goatMaleDescription</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="6" name="$l10n_shopItem_animalGoatMountainMale" image="animals/domesticated/sheep/store_goatMountainMale.png" canBeBought="true">
+                <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_goatMaleDescription</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="12" value="300" />
+                <key ageMonth="36" value="100" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="12" value="300" />
+                <key ageMonth="36" value="100" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="20" />
+                <key ageMonth="12" value="50" />
+                <key ageMonth="36" value="50" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="12" />
+                    <key ageMonth="5" value="50" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="5" value="170" />
+                </food>
+            </input>
+            <output>
+            </output>
+        </subType>
+		
+        <subType subType="GOAT_WELSH" fillTypeName="GOAT_WELSH" malePart="GOAT_MALE_WELSH">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="4" name="$l10n_shopItem_animalGoatWelshGrowthStage0" image="animals/domesticated/sheep/store_goatlingWelsh.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_goatGrowthStage0Description</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="5" name="$l10n_shopItem_animalGoatWelshGrowthStage1" image="animals/domesticated/sheep/store_goatWelshFemale.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_goatGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="5" name="$l10n_shopItem_animalGoatWelshGrowthStage1" image="animals/domesticated/sheep/store_goatWelshFemale.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_goatGrowthStage1Description</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="8" durationMonth="5" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="36" value="280" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="36" value="280" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="20" />
+                <key ageMonth="8" value="40" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="12" />
+                    <key ageMonth="5" value="50" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="25" />
+                    <key ageMonth="5" value="150" />
+                </food>
+            </input>
+            <output>
+                <milk><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="0" />
+                    <key ageMonth="1"  value="0" />
+                    <key ageMonth="2"  value="0" />
+                    <key ageMonth="3"  value="0" />
+                    <key ageMonth="4"  value="0" />
+                    <key ageMonth="5"  value="0" />
+                    <key ageMonth="6"  value="0" />
+                    <key ageMonth="7"  value="0" />
+                    <key ageMonth="8" value="35" />
+                    <key ageMonth="9" value="35" />
+                    <key ageMonth="10" value="35" />
+                    <key ageMonth="11" value="55" />
+                    <key ageMonth="12" value="55" />
+                    <key ageMonth="13" value="55" />
+                    <key ageMonth="14" value="75" />
+                    <key ageMonth="15" value="75" />
+                    <key ageMonth="16" value="75" />
+                </milk>
+            </output>
+        </subType>
+		
+        <subType subType="GOAT_MALE_WELSH" fillTypeName="GOAT_MALE_WELSH" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="4" name="$l10n_shopItem_animalGoatWelshMaleGrowthStage0" image="animals/domesticated/sheep/store_goatlingWelsh.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_goatMaleGrowthStage0Description</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="8" visualAnimalIndex="6" name="$l10n_shopItem_animalGoatWelshMale" image="animals/domesticated/sheep/store_goatWelshMale.png" canBeBought="false">
+                <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_goatMaleDescription</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="6" name="$l10n_shopItem_animalGoatWelshMale" image="animals/domesticated/sheep/store_goatWelshMale.png" canBeBought="true">
+                <description>$l10n_animal_descriptionGoatFeed</description>
+                    <description>$l10n_animal_goatMaleDescription</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="12" value="300" />
+                <key ageMonth="36" value="100" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="80" />
+                <key ageMonth="12" value="300" />
+                <key ageMonth="36" value="100" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="20" />
+                <key ageMonth="12" value="50" />
+                <key ageMonth="36" value="50" />
+            </transportPrice>
+            <input>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="12" />
+                    <key ageMonth="5" value="50" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="5" value="170" />
+                </food>
+            </input>
+            <output>
+            </output>
+        </subType>
+    </animal>
+
+    <animal type="HORSE" statsBreeding="breedHorsesCount" clusterClass="AnimalClusterHorse">
+        <configFilename>animals/domesticated/horse/husbandryAnimalsHorse.xml</configFilename>
+
+        <subType subType="HORSE_GRAY" fillTypeName="HORSE_GRAY" malePart="HORSE_GRAY_MALE">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_animal_foalGray_female" image="animals/domesticated/horse/store_foalGray.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <description>$l10n_animal_descriptionFoal</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="2" name="$l10n_animal_horseGray_female" image="$dataS/character/animals/domesticated/horse/store_horseGray.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="2" name="$l10n_animal_horseGray_female" image="$dataS/character/animals/domesticated/horse/store_horseGray.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="22" durationMonth="11" minHealthFactor="0.75" />
+            <health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45" />
+            <rideable filename="animals/domesticated/horse/horse.xml" />
+            <buyPrice>
+                <key ageMonth="0" value="500" />
+                <key ageMonth="36" value="5000" />
+                <key ageMonth="60" value="30000" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="400" />
+                <key ageMonth="36" value="5000" />
+                <key ageMonth="60" value="30000" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="300" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="1000" />
+                    <key ageMonth="18" value="2000" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="18" value="100" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="100" />
+                    <key ageMonth="18" value="600" />
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="70" />
+                    <key ageMonth="18" value="300" />
+                </manure>
+            </output>
+        </subType>
+
+        <subType subType="HORSE_GRAY_MALE" fillTypeName="HORSE_GRAY_MALE" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_animal_foalGray_male" image="animals/domesticated/horse/store_foalGray.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <description>$l10n_animal_descriptionFoal</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="2" name="$l10n_animal_horseGray_male" image="$dataS/character/animals/domesticated/horse/store_horseGray.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="2" name="$l10n_animal_horseGray_male" image="$dataS/character/animals/domesticated/horse/store_horseGray.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>1</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45" />
+            <rideable filename="animals/domesticated/horse/horse.xml" />
+            <buyPrice>
+                <key ageMonth="0" value="500" />
+                <key ageMonth="36" value="5000" />
+                <key ageMonth="60" value="35000" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="400" />
+                <key ageMonth="36" value="5000" />
+                <key ageMonth="60" value="35000" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="300" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="1000" />
+                    <key ageMonth="18" value="2000" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="18" value="100" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="100" />
+                    <key ageMonth="18" value="600" />
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="70" />
+                    <key ageMonth="18" value="300" />
+                </manure>
+            </output>
+        </subType>
+
+        <subType subType="HORSE_PALOMINO" fillTypeName="HORSE_PALOMINO" malePart="HORSE_PALOMINO_MALE">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_animal_foalPalomino_female" image="animals/domesticated/horse/store_foalPalomino.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <description>$l10n_animal_descriptionFoal</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="2" name="$l10n_animal_horsePalomino_female" image="$dataS/character/animals/domesticated/horse/store_horsePalomino.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="2" name="$l10n_animal_horsePalomino_female" image="$dataS/character/animals/domesticated/horse/store_horsePalomino.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="22" durationMonth="11" minHealthFactor="0.75" />
+            <health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45" />
+            <rideable filename="animals/domesticated/horse/horse.xml" />
+            <buyPrice>
+                <key ageMonth="0" value="500" />
+                <key ageMonth="36" value="5000" />
+                <key ageMonth="60" value="30000" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="400" />
+                <key ageMonth="36" value="5000" />
+                <key ageMonth="60" value="30000" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="300" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="1000" />
+                    <key ageMonth="18" value="2000" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="18" value="100" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="100" />
+                    <key ageMonth="18" value="600" />
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="70" />
+                    <key ageMonth="18" value="300" />
+                </manure>
+            </output>
+        </subType>
+
+        <subType subType="HORSE_PALOMINO_MALE" fillTypeName="HORSE_PALOMINO_MALE" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_animal_foalPalomino_male" image="animals/domesticated/horse/store_foalPalomino.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <description>$l10n_animal_descriptionFoal</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="2" name="$l10n_animal_horsePalomino_male" image="$dataS/character/animals/domesticated/horse/store_horsePalomino.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="2" name="$l10n_animal_horsePalomino_male" image="$dataS/character/animals/domesticated/horse/store_horsePalomino.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>2</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45" />
+            <rideable filename="animals/domesticated/horse/horse.xml" />
+            <buyPrice>
+                <key ageMonth="0" value="500" />
+                <key ageMonth="36" value="5000" />
+                <key ageMonth="60" value="35000" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="400" />
+                <key ageMonth="36" value="5000" />
+                <key ageMonth="60" value="35000" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="300" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="1000" />
+                    <key ageMonth="18" value="2000" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="18" value="100" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="100" />
+                    <key ageMonth="18" value="600" />
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="70" />
+                    <key ageMonth="18" value="300" />
+                </manure>
+            </output>
+        </subType>
+
+        <subType subType="HORSE_BLACK" fillTypeName="HORSE_BLACK" malePart="HORSE_BLACK_MALE">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_animal_foalBlack_female" image="animals/domesticated/horse/store_foalBlack.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <description>$l10n_animal_descriptionFoal</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="2" name="$l10n_animal_horseBlack_female" image="$dataS/character/animals/domesticated/horse/store_horseBlack.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="2" name="$l10n_animal_horseBlack_female" image="$dataS/character/animals/domesticated/horse/store_horseBlack.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="22" durationMonth="11" minHealthFactor="0.75" />
+            <health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45" />
+            <rideable filename="animals/domesticated/horse/horse.xml" />
+            <buyPrice>
+                <key ageMonth="0" value="500" />
+                <key ageMonth="36" value="5000" />
+                <key ageMonth="60" value="30000" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="400" />
+                <key ageMonth="36" value="5000" />
+                <key ageMonth="60" value="30000" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="300" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="1000" />
+                    <key ageMonth="18" value="2000" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="18" value="100" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="100" />
+                    <key ageMonth="18" value="600" />
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="70" />
+                    <key ageMonth="18" value="300" />
+                </manure>
+            </output>
+        </subType>
+
+        <subType subType="HORSE_BLACK_MALE" fillTypeName="HORSE_BLACK_MALE" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_animal_foalBlack_male" image="animals/domesticated/horse/store_foalBlack.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <description>$l10n_animal_descriptionFoal</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="2" name="$l10n_animal_horseBlack_male" image="$dataS/character/animals/domesticated/horse/store_horseBlack.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="2" name="$l10n_animal_horseBlack_male" image="$dataS/character/animals/domesticated/horse/store_horseBlack.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>3</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45" />
+            <rideable filename="animals/domesticated/horse/horse.xml" />
+            <buyPrice>
+                <key ageMonth="0" value="500" />
+                <key ageMonth="36" value="5500" />
+                <key ageMonth="60" value="35000" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="400" />
+                <key ageMonth="36" value="5500" />
+                <key ageMonth="60" value="35000" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="300" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="1000" />
+                    <key ageMonth="18" value="2000" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="18" value="100" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="100" />
+                    <key ageMonth="18" value="600" />
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="70" />
+                    <key ageMonth="18" value="300" />
+                </manure>
+            </output>
+        </subType>
+
+        <subType subType="HORSE_SEAL_BROWN" fillTypeName="HORSE_SEAL_BROWN" malePart="HORSE_SEAL_BROWN_MALE">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_animal_foalSealBrown_female" image="animals/domesticated/horse/store_foalSealBrown.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <description>$l10n_animal_descriptionFoal</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="2" name="$l10n_animal_horseSealBrown_female" image="$dataS/character/animals/domesticated/horse/store_horseSealBrown.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="2" name="$l10n_animal_horseSealBrown_female" image="$dataS/character/animals/domesticated/horse/store_horseSealBrown.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="22" durationMonth="11" minHealthFactor="0.75" />
+            <health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45" />
+            <rideable filename="animals/domesticated/horse/horse.xml" />
+            <buyPrice>
+                <key ageMonth="0" value="500" />
+                <key ageMonth="36" value="5000" />
+                <key ageMonth="60" value="30000" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="400" />
+                <key ageMonth="36" value="5000" />
+                <key ageMonth="60" value="30000" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="300" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="1000" />
+                    <key ageMonth="18" value="2000" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="18" value="100" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="100" />
+                    <key ageMonth="18" value="600" />
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="70" />
+                    <key ageMonth="18" value="300" />
+                </manure>
+            </output>
+        </subType>
+
+        <subType subType="HORSE_SEAL_BROWN_MALE" fillTypeName="HORSE_SEAL_BROWN_MALE" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_animal_foalSealBrown_male" image="animals/domesticated/horse/store_foalSealBrown.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <description>$l10n_animal_descriptionFoal</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="2" name="$l10n_animal_horseSealBrown_male" image="$dataS/character/animals/domesticated/horse/store_horseSealBrown.png" canBeBought="false">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+                <visual minAge="12" visualAnimalIndex="2" name="$l10n_animal_horseSealBrown_male" image="$dataS/character/animals/domesticated/horse/store_horseSealBrown.png" canBeBought="true">
+                    <description>$l10n_animal_descriptionHorseProfit</description>
+                    <description>$l10n_animal_descriptionHorseFeed</description>
+                    <description>$l10n_animal_descriptionWater</description>
+                    <description>$l10n_animal_descriptionHorseRiding</description>
+                    <description>$l10n_animal_descriptionHorseReproduction</description>
+                    <textureIndexes>
+                        <value>4</value>
+                    </textureIndexes>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45" />
+            <rideable filename="animals/domesticated/horse/horse.xml" />
+            <buyPrice>
+                <key ageMonth="0" value="500" />
+                <key ageMonth="36" value="5500" />
+                <key ageMonth="60" value="35000" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="400" />
+                <key ageMonth="36" value="5500" />
+                <key ageMonth="60" value="35000" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="300" />
+            </transportPrice>
+            <input>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="1000" />
+                    <key ageMonth="18" value="2000" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="30" />
+                    <key ageMonth="18" value="100" />
+                </water>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="100" />
+                    <key ageMonth="18" value="600" />
+                </food>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0"  value="70" />
+                    <key ageMonth="18" value="300" />
+                </manure>
+            </output>
+        </subType>
+    </animal>
+
+    <animal type="CHICKEN" statsBreeding="breedChickenCount" clusterClass="AnimalCluster">
+        <configFilename>animals/domesticated/chicken/husbandryAnimalsChicken.xml</configFilename>
+
+        <subType subType="CHICKEN" fillTypeName="CHICKEN" malePart="CHICKEN_ROOSTER">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalChickenGrowthStage0" image="animals/domesticated/chicken/store_chick.png" canBeBought="true">
+                    <description>$l10n_animal_chickenGrowthStage0Description</description>
+                </visual>
+                <visual minAge="3" visualAnimalIndex="2" name="$l10n_shopItem_animalChickenGrowthStage1" image="$dataS/character/animals/domesticated/chicken/store_chickenHen.png" canBeBought="false">
+                    <description>$l10n_animal_chickenGrowthStage1Description</description>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="2" name="$l10n_shopItem_animalChickenGrowthStage1" image="$dataS/character/animals/domesticated/chicken/store_chickenHen.png" canBeBought="true">
+                    <description>$l10n_animal_chickenGrowthStage1Description</description>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="6" durationMonth="2" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="6" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="4" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="1" />
+            </transportPrice>
+            <input>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="15" />
+                </food>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="15" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="2" />
+                    <key ageMonth="6" value="5" />
+                </water>
+            </input>
+            <output>
+                <pallets><!-- liters per month based on age -->
+                    <key ageMonth="0" value="0" />
+                    <key ageMonth="1" value="0" />
+                    <key ageMonth="2" value="0" />
+                    <key ageMonth="3" value="0" />
+                    <key ageMonth="4" value="0" />
+                    <key ageMonth="5" value="0" />
+                    <key ageMonth="6" value="7" />
+                </pallets>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="25" />
+                </manure>
+            </output>
+        </subType>
+        <subType subType="CHICKEN_ROOSTER" fillTypeName="CHICKEN_ROOSTER" >
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="1" name="$l10n_shopItem_animalRoosterGrowthStage0" image="animals/domesticated/chicken/store_chick.png" canBeBought="true">
+                    <description>$l10n_animal_roosterDescriptionGrowthStage1</description>
+                </visual>
+                <visual minAge="3" visualAnimalIndex="3" name="$l10n_shopItem_animalRoosterGrowthStage1" image="$dataS/character/animals/domesticated/chicken/store_chickenRooster.png" canBeBought="false">
+                    <description>$l10n_animal_roosterDescriptionGrowthStage1</description>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="3" name="$l10n_shopItem_animalRoosterGrowthStage1" image="$dataS/character/animals/domesticated/chicken/store_chickenRooster.png" canBeBought="true">
+                    <description>$l10n_animal_roosterDescriptionGrowthStage1</description>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="6" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="2" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="1" />
+            </transportPrice>
+            <input>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="6" />
+                    <key ageMonth="6" value="17" />
+                </food>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="6" />
+                    <key ageMonth="6" value="17" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="2" />
+                    <key ageMonth="6" value="5" />
+                </water>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="6" />
+                    <key ageMonth="6" value="27" />
+                </manure>
+            </output>
+        </subType>
+        <subType subType="DUCK_FEMALE" fillTypeName="DUCK_FEMALE" malePart="DUCK_MALE">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="4" name="$l10n_shopItem_animalDuckGrowthStage0_female" image="animals/domesticated/chicken/store_duckling.png" canBeBought="true">
+                    <description>$l10n_animal_duckGrowthStage0Description_female</description>
+                </visual>
+                <visual minAge="3" visualAnimalIndex="5" name="$l10n_shopItem_animalDuckGrowthStage1_female" image="animals/domesticated/chicken/store_duck.png" canBeBought="false">
+                    <description>$l10n_animal_duckGrowthStage1Description_female</description>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="5" name="$l10n_shopItem_animalDuckGrowthStage1_female" image="animals/domesticated/chicken/store_duck.png" canBeBought="true">
+                    <description>$l10n_animal_duckGrowthStage1Description_female</description>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="6" durationMonth="2" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="6" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="4" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="1" />
+            </transportPrice>
+            <input>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="15" />
+                </food>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="15" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="2" />
+                    <key ageMonth="6" value="5" />
+                </water>
+            </input>
+            <output>
+                <pallets><!-- liters per month based on age -->
+                    <key ageMonth="0" value="0" />
+                    <key ageMonth="1" value="0" />
+                    <key ageMonth="2" value="0" />
+                    <key ageMonth="3" value="0" />
+                    <key ageMonth="4" value="0" />
+                    <key ageMonth="5" value="0" />
+                    <key ageMonth="6" value="7" />
+                </pallets>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="25" />
+                </manure>
+            </output>
+        </subType>
+
+        <subType subType="DUCK_MALE" fillTypeName="DUCK_MALE">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="4" name="$l10n_shopItem_animalDuckGrowthStage0_male" image="animals/domesticated/chicken/store_duckling.png" canBeBought="true">
+                    <description>$l10n_animal_duckGrowthStage0Description_male</description>
+                </visual>
+                <visual minAge="3" visualAnimalIndex="5" name="$l10n_shopItem_animalDuckGrowthStage1_male" image="animals/domesticated/chicken/store_duck.png" canBeBought="false">
+                    <description>$l10n_animal_duckGrowthStage1Description_male</description>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="5" name="$l10n_shopItem_animalDuckGrowthStage1_male" image="animals/domesticated/chicken/store_duck.png" canBeBought="true">
+                    <description>$l10n_animal_duckGrowthStage1Description_male</description>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="6" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="2" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="1" />
+            </transportPrice>
+            <input>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="6" />
+                    <key ageMonth="6" value="17" />
+                </food>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="6" />
+                    <key ageMonth="6" value="17" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="2" />
+                    <key ageMonth="6" value="5" />
+                </water>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="6" />
+                    <key ageMonth="6" value="27" />
+                </manure>
+            </output>
+        </subType>
+     </animal>
+</animals>

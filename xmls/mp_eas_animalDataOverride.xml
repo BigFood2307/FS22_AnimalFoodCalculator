@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<animalDataOverride>
+
+    <!-- Explanation
+    This XML allows you to override the input and output values for animals. You can either increase/decrease amounts, change the age-curve vs. usage or even add/remove inputs and outputs.
+
+    <animalData type="COW" subType="COW_SWISS_BROWN" > ==> type= animalType subType= subType for this particular animal.
+    <inputs overrideType="add"> ==> overrideType can either be "add" which means that the input will be added or will replace that particular input if it already exists, but doesn't touch other inputs that aren't changed
+                                ==> can also be "replace" which means that all the inputs get replaced with those listed in this XML. Use this if you want to remove default inputs and replace them with custom ones or none
+    <input type="straw" > ==> type is the name of the input-type, afaik its always a fillType   
+    <key ageMonth="0" value="100" /> ==> thats the keyframing for the age-value curve. ageMonth is the month of age and the value is the actual value at that age.
+
+    Outputs work exactly the same as Inputs so the explanation above still applies just for "output" instead of "input"             
+    -->
+
+																									<!-- Version 1.0.2.0  16.09.2022 TAP/Sam -->
+
+
+
+	<!-- all in liters per month -->
+    <animalData type="COW" subType="COW_SWISS_BROWN" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="100" />
+                <key ageMonth="18" value="200" />    
+                <key ageMonth="22" value="250" />                            
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="200" />
+                <key ageMonth="18" value="400" />    
+                <key ageMonth="22" value="650" />                            
+            </input>
+        </inputs>
+
+        <outputs overrideType="add">
+            <output type="milk" >
+                <key ageMonth="0"  value="0" />
+                <key ageMonth="12" value="0" />
+                <key ageMonth="18" value="100" /> 
+				<key ageMonth="22" value="200" /> 
+            </output>
+        </outputs>
+    </animalData>
+    
+    <animalData type="COW" subType="BULL_SWISS_BROWN" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="100" />
+                <key ageMonth="18" value="200" />    
+                <key ageMonth="22" value="250" />                            
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="200" />
+                <key ageMonth="18" value="400" />    
+                <key ageMonth="22" value="650" />                            
+            </input>
+        </inputs>
+
+        <outputs overrideType="add">
+        </outputs>
+    </animalData>
+	
+	<animalData type="COW" subType="COW_HOLSTEIN" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="100" />
+                <key ageMonth="18" value="200" />    
+                <key ageMonth="22" value="250" />                            
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="200" />
+                <key ageMonth="18" value="400" />    
+                <key ageMonth="22" value="650" />                            
+            </input>
+        </inputs>
+
+        <outputs overrideType="add">
+            <output type="milk" >
+                <key ageMonth="0"  value="0" />
+                <key ageMonth="12" value="0" />
+                <key ageMonth="18" value="200" /> 
+				<key ageMonth="22" value="300" /> 
+            </output>
+        </outputs>
+    </animalData>
+
+    <animalData type="COW" subType="BULL_HOLSTEIN" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="100" />
+                <key ageMonth="18" value="200" />    
+                <key ageMonth="22" value="250" />                            
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="200" />
+                <key ageMonth="18" value="400" />    
+                <key ageMonth="22" value="650" />                            
+            </input>
+        </inputs>
+
+        <outputs overrideType="add">
+            <output type="milk" >
+                <key ageMonth="0"  value="0" />
+                <key ageMonth="12" value="0" />
+                <key ageMonth="18" value="200" /> 
+				<key ageMonth="22" value="300" /> 
+            </output>
+        </outputs>
+    </animalData>
+
+	<animalData type="COW" subType="COW_ANGUS" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="100" />
+                <key ageMonth="18" value="200" />    
+                <key ageMonth="22" value="250" />                            
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="200" />
+                <key ageMonth="18" value="400" />    
+                <key ageMonth="22" value="650" />                            
+            </input>
+        </inputs>
+		<outputs overrideType="add">
+            <output type="milk" >
+                <key ageMonth="0"  	value="0" />
+                <key ageMonth="12" 	value="0" />
+				<key ageMonth="17" 	value="0" />
+                <key ageMonth="19" 	value="0" /> 
+                <key ageMonth="20" 	value="0" /> 
+				<key ageMonth="22" 	value="0" /> 
+            </output>
+        </outputs>
+    </animalData>
+    
+	<animalData type="COW" subType="BULL_ANGUS" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="100" />
+                <key ageMonth="18" value="200" />    
+                <key ageMonth="22" value="250" />                            
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="200" />
+                <key ageMonth="18" value="400" />    
+                <key ageMonth="22" value="650" />                            
+            </input>
+        </inputs>
+		<outputs overrideType="add">
+        </outputs>
+    </animalData>
+
+	<animalData type="COW" subType="COW_LIMOUSIN" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="100" />
+                <key ageMonth="18" value="200" />    
+                <key ageMonth="22" value="250" />                            
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="200" />
+                <key ageMonth="18" value="400" />    
+                <key ageMonth="22" value="650" />                             
+            </input>
+        </inputs>
+		<outputs overrideType="add">
+            <output type="milk" >
+                <key ageMonth="0"  	value="0" />
+                <key ageMonth="12" 	value="0" />
+				<key ageMonth="17" 	value="0" />
+                <key ageMonth="19" 	value="0" /> 
+                <key ageMonth="20" 	value="0" /> 
+				<key ageMonth="22" 	value="0" /> 
+            </output>
+        </outputs>
+    </animalData>
+    
+	<animalData type="COW" subType="BULL_LIMOUSIN" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="100" />
+                <key ageMonth="18" value="200" />    
+                <key ageMonth="22" value="250" />                            
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="200" />
+                <key ageMonth="18" value="400" />    
+                <key ageMonth="22" value="650" />                             
+            </input>
+        </inputs>
+		<outputs overrideType="add">
+        </outputs>
+    </animalData>
+	
+	<!-- all in liters per month for pigs -->
+	<animalData type="PIG" subType="PIG_LANDRACE" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="10" />
+                <key ageMonth="6" value="100" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                           
+            </input>
+        </inputs>
+    </animalData>
+    
+	<animalData type="PIG" subType="BOAR_LANDRACE" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="10" />
+                <key ageMonth="6" value="100" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                           
+            </input>
+        </inputs>
+    </animalData>
+
+	<animalData type="PIG" subType="PIG_BLACK_PIED" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="10" />
+                <key ageMonth="6" value="100" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                           
+            </input>
+        </inputs>
+    </animalData>
+    
+	<animalData type="PIG" subType="BOAR_BLACK_PIED" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="10" />
+                <key ageMonth="6" value="100" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                           
+            </input>
+        </inputs>
+    </animalData>
+
+	<animalData type="PIG" subType="PIG_BERKSHIRE" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="10" />
+                <key ageMonth="6" value="100" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                           
+            </input>
+        </inputs>
+    </animalData>
+    
+	<animalData type="PIG" subType="BOAR_BERKSHIRE" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="10" />
+                <key ageMonth="6" value="100" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                           
+            </input>
+        </inputs>
+    </animalData>
+	
+	<!-- all in liters per month for sheep  -->
+	<animalData type="SHEEP" subType="SHEEP_LANDRACE" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+               <key ageMonth="0" value="25" />
+               <key ageMonth="6" value="290" />                           
+            </input>
+        </inputs>
+    </animalData>
+    
+	<animalData type="SHEEP" subType="SHEEP_RAM_LANDRACE" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+               <key ageMonth="0" value="25" />
+               <key ageMonth="6" value="290" />                           
+            </input>
+        </inputs>
+    </animalData>
+
+	<animalData type="SHEEP" subType="SHEEP_STEINSCHAF" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                            
+            </input>
+        </inputs>
+    </animalData>
+    
+	<animalData type="SHEEP" subType="SHEEP_RAM_STEINSCHAF" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                            
+            </input>
+        </inputs>
+    </animalData>
+
+	<animalData type="SHEEP" subType="SHEEP_SWISS_MOUNTAIN" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                            
+            </input>
+        </inputs>
+    </animalData>
+    
+	<animalData type="SHEEP" subType="SHEEP_RAM_MOUNTAIN" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                            
+            </input>
+        </inputs>
+    </animalData>
+
+	<animalData type="SHEEP" subType="SHEEP_BLACK_WELSH" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                            
+            </input>
+        </inputs>
+    </animalData>
+    
+	<animalData type="SHEEP" subType="SHEEP_RAM_WELSH" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                            
+            </input>
+        </inputs>
+    </animalData>
+    
+	<!-- all in liters per month for goats -->
+	<animalData type="SHEEP" subType="GOAT_LANDRACE" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+               <key ageMonth="0" value="25" />
+               <key ageMonth="6" value="290" />                           
+            </input>
+        </inputs>
+    </animalData>
+    
+	<animalData type="SHEEP" subType="GOAT_MALE_LANDRACE" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+               <key ageMonth="0" value="25" />
+               <key ageMonth="6" value="290" />                           
+            </input>
+        </inputs>
+    </animalData>
+
+	<animalData type="SHEEP" subType="GOAT_STONEGOAT" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                            
+            </input>
+        </inputs>
+    </animalData>
+    
+	<animalData type="SHEEP" subType="GOAT_MALE_STONEGOAT" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                            
+            </input>
+        </inputs>
+    </animalData>
+
+	<animalData type="SHEEP" subType="GOAT_MOUNTAIN" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                            
+            </input>
+        </inputs>
+    </animalData>
+    
+	<animalData type="SHEEP" subType="GOAT_MALE_MOUNTAIN" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                            
+            </input>
+        </inputs>
+    </animalData>
+
+	<animalData type="SHEEP" subType="GOAT_WELSH" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                            
+            </input>
+        </inputs>
+    </animalData>
+    
+	<animalData type="SHEEP" subType="GOAT_MALE_WELSH" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="5" />
+                <key ageMonth="5" value="80" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="25" />
+                <key ageMonth="6" value="290" />                            
+            </input>
+        </inputs>
+    </animalData>
+    
+	
+	<!-- all in liters per month for horses -->
+	<animalData type="HORSE" subType="HORSE_GRAY" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="50" />
+                <key ageMonth="18" value="250" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="80" />
+                <key ageMonth="18" value="500" />                           
+            </input>
+        </inputs>
+    </animalData>
+    
+	<animalData type="HORSE" subType="HORSE_GRAY_MALE" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="50" />
+                <key ageMonth="18" value="250" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="80" />
+                <key ageMonth="18" value="500" />                           
+            </input>
+        </inputs>
+    </animalData>
+
+	<animalData type="HORSE" subType="HORSE_PALOMINO" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="50" />
+                <key ageMonth="18" value="250" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="80" />
+                <key ageMonth="18" value="500" />                           
+            </input>
+        </inputs>
+    </animalData>
+    
+	<animalData type="HORSE" subType="HORSE_PALOMINO_MALE" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="50" />
+                <key ageMonth="18" value="250" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="80" />
+                <key ageMonth="18" value="500" />                           
+            </input>
+        </inputs>
+    </animalData>
+
+	<animalData type="HORSE" subType="HORSE_BLACK" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="50" />
+                <key ageMonth="18" value="250" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="80" />
+                <key ageMonth="18" value="500" />                           
+            </input>
+        </inputs>
+    </animalData>
+    
+	<animalData type="HORSE" subType="HORSE_BLACK_MALE" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="50" />
+                <key ageMonth="18" value="250" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="80" />
+                <key ageMonth="18" value="500" />                           
+            </input>
+        </inputs>
+    </animalData>
+
+	<animalData type="HORSE" subType="HORSE_SEAL_BROWN" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="50" />
+                <key ageMonth="18" value="250" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="80" />
+                <key ageMonth="18" value="500" />                           
+            </input>
+        </inputs>
+    </animalData>
+
+	<animalData type="HORSE" subType="HORSE_SEAL_BROWN_MALE" >
+        <inputs overrideType="add">
+            <input type="straw" >
+                <key ageMonth="0" value="50" />
+                <key ageMonth="18" value="250" />                               
+            </input>
+			<input type="food" >
+                <key ageMonth="0" value="80" />
+                <key ageMonth="18" value="500" />                           
+            </input>
+        </inputs>
+    </animalData>
+	
+	<!-- all in liters per month for chicken  -->
+	<animalData type="CHICKEN" subType="CHICKEN" >
+        <inputs overrideType="add">
+			<input type="food" >
+                <key ageMonth="0" value="20" />                          
+            </input>
+        </inputs>
+
+    </animalData>
+	<animalData type="CHICKEN" subType="CHICKEN_ROOSTER" >
+        <inputs overrideType="add">
+			<input type="food" >
+                <key ageMonth="0" value="10" />                          
+            </input>
+			<input type="STRAW" >
+                <key ageMonth="0" value="100" />                          
+            </input>
+        </inputs>
+    </animalData>
+    
+	<!-- all in liters per month for ducks  -->
+	<animalData type="CHICKEN" subType="DUCK_FEMALE" >
+        <inputs overrideType="add">
+			<input type="food" >
+                <key ageMonth="0" value="20" />                          
+            </input>
+        </inputs>
+    </animalData>
+
+	<animalData type="CHICKEN" subType="DUCK_MALE" >
+        <inputs overrideType="add">
+			<input type="food" >
+                <key ageMonth="0" value="10" />                          
+            </input>
+			<input type="STRAW" >
+                <key ageMonth="0" value="100" />                          
+            </input>
+        </inputs>
+    </animalData>
+</animalDataOverride>
+
+
+
