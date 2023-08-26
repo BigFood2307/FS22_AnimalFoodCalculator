@@ -1,13 +1,18 @@
-
+import tkinter as tk
 import xml.etree.ElementTree as ET
 from collections import Counter
 from animal_types import AnimalSubType
-from animal_organization import AnimalHubandry
+from animal_organization import AnimalHusbandry
 import math
 
-from utility import	findSubType
+from gui.animal_food_frame import AnimalFoodFrame
+
+from utility import	findSubType, calcInOut
 
 # Config start
+
+width=1200
+height=800
 
 settingsXmlPath = "xmls/script_settings.xml"
 
@@ -36,7 +41,9 @@ subTypeFilter = []
 for subTypeElement in settingsElement.find('subTypeFilter').iter('subType'):
 	subTypeFilter.append(subTypeElement.attrib['name'])
 
-daysPerMonth =  int(settingsElement.find('daysPerMonth').attrib['days'])
+daysPerMonth = int(settingsElement.find('daysPerMonth').attrib['days'])
+
+useGui = settingsElement.find('gui').attrib['useBasicGui'] == "True"
 
 # Read subtypes
 baseElement = ET.parse(baseXmlPath).getroot()
@@ -60,31 +67,34 @@ if overrideXmlPath != "":
 			subtypes[idx].override(subTypeElement)
 
 # Read placeables
-husbandries = AnimalHubandry.allFromPlaceables(placeablesXml, farmIds, subtypes)
+husbandries = AnimalHusbandry.allFromPlaceables(placeablesXml, farmIds, subtypes)
 
-# Compute Food
-outputs = Counter()
-inputs = Counter()
+if not useGui:
+	# Compute Food
 
-for month in range(timeframe):
-	newIn, newOut = AnimalHubandry.calcInOutAll(husbandries, month, ageFilter, subTypeFilter)
-	outputs.update(newOut)
-	inputs.update(newIn)
+	inputs, outputs = calcInOut(husbandries, ageFilter, subTypeFilter, timeframe)
 
-outputs = dict(outputs)
-inputs = dict(inputs)
+	# Output
 
-# Output
-print("Inputs:")
-for key in iter(inputs):
-	perDay = inputs[key]/(timeframe*daysPerMonth)
-	print(key + ": " + str(inputs[key]) + " (" + str(perDay) + ")")
+	print("Inputs:")
+	for key in iter(inputs):
+		perDay = inputs[key]/(timeframe*daysPerMonth)
+		print(key + ": " + str(inputs[key]) + " (" + str(perDay) + ")")
 
-print()
+	print()
 
-print("Outputs:")
-for key in iter(outputs):
-	perDay = outputs[key]/(timeframe*daysPerMonth)
-	print(key + ": " + str(outputs[key]) + " (" + str(perDay) + ")")
+	print("Outputs:")
+	for key in iter(outputs):
+		perDay = outputs[key]/(timeframe*daysPerMonth)
+		print(key + ": " + str(outputs[key]) + " (" + str(perDay) + ")")
 
-input("Press Enter to finish")
+	input("Press Enter to finish")
+
+else:
+
+	tkRoot = tk.Tk()
+	tkRoot.geometry(str(width) + "x" + str(height))
+	tkRoot.resizable(False, False)
+	myapp = AnimalFoodFrame(tkRoot, height, subtypes, husbandries, daysPerMonth, timeframe, ageFilter, subTypeFilter)
+
+	tkRoot.mainloop()
