@@ -2,7 +2,7 @@
 from animal_types import AnimalSubType
 from collections import Counter
 import xml.etree.ElementTree as ET
-from utility import	findSubType
+from utility import	findSubType, nameFromPath
 import math
 
 class AnimalCluster:
@@ -44,21 +44,27 @@ class AnimalCluster:
 
 
 
-class AnimalHubandry:
-	def __init__(self):
+class AnimalHusbandry:
+	def __init__(self, name):
 		self.clusters = []
+		self.name = name
+		self.enabled = True
 
 	def addCluster(self, cluster):
 		self.clusters.append(cluster)
 	
 	def calcInputs(self, extraMonths=0, ageFilter=[0, math.inf], subTypeFilter=None):
 		inputs = Counter()
+		if not self.enabled:
+			return inputs
 		for cluster in self.clusters:
 			inputs.update(cluster.calcInputs(extraMonths, ageFilter, subTypeFilter))
 		return dict(inputs)
 	
 	def calcOutputs(self, extraMonths=0, ageFilter=[0, math.inf], subTypeFilter=None):
 		outputs = Counter()
+		if not self.enabled:
+			return outputs
 		for cluster in self.clusters:
 			outputs.update(cluster.calcOutputs(extraMonths, ageFilter, subTypeFilter))
 		return dict(outputs)
@@ -74,8 +80,8 @@ class AnimalHubandry:
 
 	
 	@staticmethod
-	def fromXml(element, subtypes):
-		husbandry = AnimalHubandry()
+	def fromXml(element, subtypes, name):
+		husbandry = AnimalHusbandry(name)
 		for cluster in element.iter('animal'):
 			husbandry.addCluster(AnimalCluster.fromXml(cluster, subtypes))
 		return husbandry
@@ -87,11 +93,12 @@ class AnimalHubandry:
 		for placeable in placeablesElement.iter('placeable'):
 			husbandryElement = placeable.find('husbandryAnimals')
 			if husbandryElement is not None:
+				husbandryName = nameFromPath(placeable.attrib['filename'])
 				farmId = int(placeable.attrib['farmId'])
 				if farmId in farmIds:
 					clustersElement = husbandryElement.find('clusters')
 					if clustersElement is not None:
-						husbandry = AnimalHubandry.fromXml(clustersElement, subtypes)
+						husbandry = AnimalHusbandry.fromXml(clustersElement, subtypes, husbandryName)
 						husbandries.append(husbandry)
 		return husbandries
 
