@@ -12,10 +12,17 @@ All config is done in the xmls/script_settings.xml file
 * In the age filter set minAge, maxAge. Only animals included in this range will be used when calculating the food amount
 * List all the animal subtypes, that you want to calculate the in/outputs for
 * Set your daysPerMonth for the daily food calculation
+* Specify if you want to use the program in commandline or gui mode
 
 Then just run the script...
 
 The given amounts are for the entire timeframe, values in brackets behind it are average per day.
+
+## GUI
+
+A very basic GUI lets you change some settings on the fly and then rerun the calculation.  
+You can also disable some Husbandries to exclude them from the result.
+More functionality may follow at a later point.
 
 ## Executable
 
