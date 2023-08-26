@@ -95,6 +95,7 @@ else:
 	tkRoot = tk.Tk()
 	tkRoot.geometry(str(width) + "x" + str(height))
 	tkRoot.resizable(False, False)
+	tkRoot.title("FS22 Animal Food Calculator")
 	myapp = AnimalFoodFrame(tkRoot, height, subtypes, husbandries, daysPerMonth, timeframe, ageFilter, subTypeFilter)
 
 	tkRoot.mainloop()
