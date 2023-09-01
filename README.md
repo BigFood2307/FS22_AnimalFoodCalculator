@@ -1,5 +1,7 @@
 # Animal Food Calculator
 
+__This is a standalone programm! For the mod, that just shows the Food requirements ingame, check out FS22_AnimalFoodCalculatorIngame!__
+
 This script will calculate your food needs over a given amount of time.
 
 All config is done in the xmls/script_settings.xml file
