@@ -8,6 +8,7 @@ All config is done in the xmls/script_settings.xml file
 
 * Choose your base animals xml (animals is vanilla, eas_animals with EAS, copy in from a map if different)
 * Choose your override xml (M+, M+ and EAS, custom). Use "" if you dont use M+
+* Specify the path to your eas_settings file. Use "" if you dont use EAS (or if you use EAS pre 2.2.0.0)
 * Give the path to your savegames placeables.xml. All animals will be read from there
 * List all farmIds for which the animals should be read, other farms will be ignored
 * Give the timeframe in months for which the calculation should be done
@@ -25,6 +26,19 @@ The given amounts are for the entire timeframe, values in brackets behind it are
 A very basic GUI lets you change some settings on the fly and then rerun the calculation.  
 You can also disable some Husbandries to exclude them from the result.
 More functionality may follow at a later point.
+
+## New births, deaths and selling
+
+New animals are not currently added automatically. This may be included at a later date.
+Similarly deaths or sales at certain ages for eg. bulls are an interesting topic, but not implemented.
+
+## EAS Compatibility
+
+EAS makes food usage and milk production a little more varied, by adjusting it shortly after a birth.  
+If you specify a eas_settings file this programm will automatically read the adjustments from there and calculate food/milk accordingly.  
+However, EAS also changed insemination to be chance based. This script assumes all inseminations are immediatley successful.  
+In reality it takes about 0.72 months on average. This inaccuracy is bareley noticable in the short term, but will change the result slightly over longer timeframes.  
+https://www.farming-simulator.com/mod.php?mod_id=259964&title=fs2022
 
 ## Executable
 
