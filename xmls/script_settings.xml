@@ -2,7 +2,8 @@
 <settings version="1">
 	<baseXml path="xmls/eas_animals.xml"/>
 	<overrideXml path="xmls/afa_eas_animalDataOverride.xml"/>
-	<placeablesXml path="xmls/sample_placeables.xml"/>
+	<easSettingsXml path="xmls/eas_settings.xml"/>
+	<placeablesXml path="xmls/eas_sample_placeables.xml"/>
 	<farmIds>
 		<farmId id="0"/>
 		<farmId id="1"/>

@@ -1,0 +1,53 @@
+<EnhancedAnimalSystem>
+     <!-- NumHoursOfOvercrowdingBeforReduceHealth max possible value is 31 -->
+	<Settings
+    SellingPricePercentage="0.75"
+    MaxOvercrowdingPercentage="1"
+    AnimalDiedPercentageOnMaxAge="5"
+    AnimalDiedPercentageWhenHealthIsEmpty="3"
+    NumHoursOfOvercrowdingBeforReduceHealth="12"
+    MaxHealthOvercrowdingDeduction="5"
+
+	MinPiglets="8"
+	MaxPiglets="12"
+    PigletsProbabilities="20,20,20,20,20"
+    PigMaxAge="180"
+    PigInseminationCost="10"
+    PigInseminationProbabilities="40,80"
+    PigFoodFactor="0.9,1.02,1.08,1.06,1.02,1.01"
+
+	MinCalfs="0"
+	MaxCalfs="2"
+    CalfProbabilities="1,98,1"
+    CowMaxAge="300"
+    CowInseminationCost="15"
+    CowInseminationProbabilities="40,80"
+    CowFoodFactor="0.9,1.02,1.08,1.06,1.02,1.01"
+    CowLactation="1.0,1.1,1.2,1.15,1.1,1.05,1.0,0.95,0.9,0.85,0.8,0.78,0.75,0.7,0.6,0.5,0.4,0.3,0.2,0.1"
+
+	MinFoals="0"
+	MaxFoals="2"
+    FoalProbabilities="1,98,1"
+    HorseMaxAge="360"
+    HorseInseminationCost="15"
+    HorseInseminationProbabilities="40,80"
+    HorseFoodFactor="0.9,1.02,1.08,1.06,1.02,1.01"
+
+	MinLambs="0"
+	MaxLambs="3"
+    LambProbabilities="1,59,30,10"
+    SheepMaxAge="144"
+    SheepInseminationCost="10"
+    SheepInseminationProbabilities="40,80"
+    SheepFoodFactor="0.9,1.02,1.08,1.06,1.02,1.01"
+    GoatLactation="1.0,1.2,1.15,1.1,1.0,0.9,0.7,0.5,0.3,0.1"
+
+	MinChickens="9"
+	MaxChickens="13"
+    ChickenProbabilities="20,20,20,20,20"
+    ChickenMaxAge="180"
+    ChickenInseminationCost="5"
+    ChickenInseminationProbabilities="40,80"
+    ChickenFoodFactor="0.9,1.02,1.08,1.06,1.02,1.01"
+	/>
+</EnhancedAnimalSystem>
