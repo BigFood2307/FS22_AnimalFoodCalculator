@@ -24,6 +24,8 @@ settingsElement = ET.parse(settingsXmlPath).getroot()
 baseXmlPath = settingsElement.find('baseXml').attrib['path']
 overrideXmlPath = settingsElement.find('overrideXml').attrib['path']
 placeablesXml = settingsElement.find('placeablesXml').attrib['path']
+easSettingsXmlPath = settingsElement.find('easSettingsXml').attrib['path']
+easUsed =  easSettingsXmlPath != ""
 
 farmIds = []
 
@@ -66,8 +68,40 @@ if overrideXmlPath != "":
 		if -1 != idx:
 			subtypes[idx].override(subTypeElement)
 
+# Read eas settings, if used
+
+typeToLactationValues = None
+typeToFoodValues = None
+
+if easUsed:
+	easSettingsElement = ET.parse(easSettingsXmlPath).getroot().find('Settings')
+
+	typeToLactationSetting = dict()
+	typeToLactationValues = dict()
+
+	typeToLactationSetting["COW"] = "CowLactation"
+	typeToLactationSetting["SHEEP"] = "GoatLactation"
+
+	typeToFoodSetting = dict()
+	typeToFoodValues = dict()
+		
+	typeToFoodSetting["PIG"] = "PigFoodFactor"
+	typeToFoodSetting["COW"] = "CowFoodFactor"
+	typeToFoodSetting["HORSE"] = "HorseFoodFactor"
+	typeToFoodSetting["SHEEP"] = "SheepFoodFactor"
+	typeToFoodSetting["CHICKEN"] = "ChickenFoodFactor"
+
+	for type in typeToLactationSetting.keys():
+		typeToLactationValues[type] = easSettingsElement.attrib[typeToLactationSetting[type]].split(',')
+		typeToLactationValues[type] = [float(string) for string in typeToLactationValues[type]]
+
+	for type in typeToFoodSetting.keys():
+		typeToFoodValues[type] = easSettingsElement.attrib[typeToFoodSetting[type]].split(',')
+		typeToFoodValues[type] = [float(string) for string in typeToFoodValues[type]]
+
 # Read placeables
-husbandries = AnimalHusbandry.allFromPlaceables(placeablesXml, farmIds, subtypes)
+husbandries = AnimalHusbandry.allFromPlaceables(placeablesXml, farmIds, subtypes, easUsed, typeToLactationValues, typeToFoodValues)
+
 
 if not useGui:
 	# Compute Food

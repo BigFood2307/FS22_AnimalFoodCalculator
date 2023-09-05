@@ -7,6 +7,13 @@ class AnimalSubType:
 		self.type = type
 		self.subType = element.attrib['subType']
 
+		reproduction = element.find('reproduction')
+		self.durationMonth = None
+		self.minReproductionAge = None
+		if "durationMonth" in reproduction.attrib.keys():
+			self.durationMonth = int(reproduction.attrib['durationMonth'])
+			self.minReproductionAge = int(reproduction.attrib['minAgeMonth'])
+
 		inputElement = element.find('input')
 		self.inputs = dict()
 		for inputType in inputElement:
