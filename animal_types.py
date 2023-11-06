@@ -17,12 +17,12 @@ class AnimalSubType:
 		inputElement = element.find('input')
 		self.inputs = dict()
 		for inputType in inputElement:
-			self.inputs[inputType.tag] = LinearTable(inputType)
+			self.inputs[inputType.tag.lower()] = LinearTable(inputType)
 
 		outputElement = element.find('output')
 		self.outputs = dict()
 		for outputType in outputElement:
-			self.outputs[outputType.tag] = LinearTable(outputType)
+			self.outputs[outputType.tag.lower()] = LinearTable(outputType)
 	
 	def override(self, element):
 		inputsElement = element.find('inputs')
@@ -32,7 +32,7 @@ class AnimalSubType:
 			self.inputs = dict()
 
 		for inputType in inputsElement.iter('input'):
-			self.inputs[inputType.attrib['type']] = LinearTable(inputType)
+			self.inputs[inputType.attrib['type'].lower()] = LinearTable(inputType)
 
 		outputsElement = element.find('outputs')
 		if outputsElement:
@@ -42,5 +42,5 @@ class AnimalSubType:
 				self.outputs = dict()
 
 			for outputType in outputsElement.iter('output'):
-				self.outputs[outputType.attrib['type']] = LinearTable(outputType)
+				self.outputs[outputType.attrib['type'].lower()] = LinearTable(outputType)
 

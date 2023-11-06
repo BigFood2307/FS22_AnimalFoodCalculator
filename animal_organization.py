@@ -13,16 +13,16 @@ class AnimalCluster:
 		self.reproduction = reproduction
 		self.easUsed = easUsed
 	
-	def calcInputs(self, extraMonths=0, ageFilter=[0, math.inf], subTypeFilter=None):
+	def calcInputs(self, extraMonths=0, ageFilter=[0, math.inf], subTypeFilter=[]):
 		inputs = dict()
 		specifiedAge = self.age + extraMonths
 		if specifiedAge < ageFilter[0] or specifiedAge > ageFilter[1]:
 			return inputs
-		if subTypeFilter is not None:
+		if subTypeFilter != []:
 			if not self.subType.subType in subTypeFilter:
 				return inputs
 		for key in iter(self.subType.inputs):
-			inputs[key] = self.subType.inputs[key].getValue(specifiedAge) * self.count
+			inputs[key] = self.subType.inputs[key].getValue(specifiedAge) * self.count			
 
 			# special case food for EAS:
 			if key == "food" and (self.easUsed and self.foodFactors is not None):
@@ -43,12 +43,12 @@ class AnimalCluster:
 				inputs[key] = inputs[key]*factor
 		return inputs
 
-	def calcOutputs(self, extraMonths=0, ageFilter=[0, math.inf], subTypeFilter=None):
+	def calcOutputs(self, extraMonths=0, ageFilter=[0, math.inf], subTypeFilter=[]):
 		outputs = dict()
 		specifiedAge = self.age + extraMonths
 		if specifiedAge < ageFilter[0] or specifiedAge > ageFilter[1]:
 			return outputs
-		if subTypeFilter is not None:
+		if subTypeFilter != []:
 			if not self.subType.subType in subTypeFilter:
 				return outputs
 		for key in iter(self.subType.outputs):
@@ -110,7 +110,7 @@ class AnimalHusbandry:
 	def addCluster(self, cluster):
 		self.clusters.append(cluster)
 	
-	def calcInputs(self, extraMonths=0, ageFilter=[0, math.inf], subTypeFilter=None):
+	def calcInputs(self, extraMonths=0, ageFilter=[0, math.inf], subTypeFilter=[]):
 		inputs = Counter()
 		if not self.enabled:
 			return inputs
@@ -118,7 +118,7 @@ class AnimalHusbandry:
 			inputs.update(cluster.calcInputs(extraMonths, ageFilter, subTypeFilter))
 		return dict(inputs)
 	
-	def calcOutputs(self, extraMonths=0, ageFilter=[0, math.inf], subTypeFilter=None):
+	def calcOutputs(self, extraMonths=0, ageFilter=[0, math.inf], subTypeFilter=[]):
 		outputs = Counter()
 		if not self.enabled:
 			return outputs
@@ -127,7 +127,7 @@ class AnimalHusbandry:
 		return dict(outputs)
 	
 	@staticmethod
-	def calcInOutAll(husbandries, extraMonths=0, ageFilter=[0, math.inf], subTypeFilter=None):		
+	def calcInOutAll(husbandries, extraMonths=0, ageFilter=[0, math.inf], subTypeFilter=[]):		
 		outputs = Counter()
 		inputs = Counter()
 		for husbandry in husbandries:
@@ -139,8 +139,9 @@ class AnimalHusbandry:
 	@staticmethod
 	def fromXml(element, subtypes, name, easUsed, lactationFactors=None, foodFactors=None):
 		husbandry = AnimalHusbandry(name)
-		for cluster in element.iter('animal'):
-			husbandry.addCluster(AnimalCluster.fromXml(cluster, subtypes, easUsed, lactationFactors, foodFactors))
+		if element is not None:
+			for cluster in element.iter('animal'):
+				husbandry.addCluster(AnimalCluster.fromXml(cluster, subtypes, easUsed, lactationFactors, foodFactors))
 		return husbandry
 	
 	@staticmethod
@@ -151,6 +152,9 @@ class AnimalHusbandry:
 			husbandryElement = placeable.find('husbandryAnimals')
 			if husbandryElement is not None:
 				husbandryName = nameFromPath(placeable.attrib['filename'])
+				renamed = 'name' in placeable.attrib.keys()
+				if renamed:
+					husbandryName = placeable.attrib['name']
 				farmId = int(placeable.attrib['farmId'])
 				if farmId in farmIds:
 					clustersElement = husbandryElement.find('clusters')
